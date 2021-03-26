@@ -1,6 +1,6 @@
 "use strict;"
 
-import { Node, Renderer, Graph } from './Simulation.mjs';
+import { PVector, Node, Renderer, Graph } from './Simulation.mjs';
 
 // Setup
 const fpsDOM = document.getElementById('fps');

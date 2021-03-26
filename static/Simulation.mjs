@@ -1,5 +1,7 @@
 "use strict;"
 
+export { PVector, Node, Renderer, Graph }
+
 const canvasDOM = document.getElementById('canvas');
 
 class PVector {
@@ -16,6 +18,11 @@ class PVector {
 		const dY = v1.y - v2.y;
 
 		return Math.sqrt(dX * dX + dY * dY);
+	}
+
+	set(x, y){
+		this.x = x;
+		this.y = y;
 	}
 
 	add(vec){
@@ -150,13 +157,17 @@ class Node {
 	}
 }
 
+class Mouse {
+	constructor(){
+		this.pos = new PVector(0, 0);
+		this.pos_last = new PVector(0, 0);
+		this.attached = null;
+		this.held = false;
+	}
+}
+
 class Renderer {
 
-	ctx = null;
-    width = null;
-    height = null;
-	graph = null;
-	
 	// pos: obj {x, y}, attached: obj (Node), held: boolean
 	mouse = {
 		pos: {
@@ -177,6 +188,8 @@ class Renderer {
 		this.height = height;
 		this.graph = graph;
 
+		this.mouse = new Mouse();
+
 		this.InitEventListeners();
 	}
 
@@ -185,7 +198,7 @@ class Renderer {
 			const diffX = this.mouse.pos.x - this.mouse.pos_last.x;
 			const diffY = this.mouse.pos.y - this.mouse.pos_last.y;
 
-			this.pos.attached.pos.add(new PVector(diffX, diffY));
+			this.mouse.attached.pos.set(this.mouse.pos.x, this.mouse.pos.y);
 		}        
 	}
 	
@@ -229,11 +242,12 @@ class Renderer {
 	InitEventListeners() {
 
 		canvas.addEventListener('dblclick', (e) => {
-			this.mouse.pos.x = e.offsetX;
-			this.mouse.pos.y = e.offsetY
+			this.mouse.pos.set(e.offsetX, e.offsetY);
+
 			for(const node of this.graph.nodes){
-				const dist = Math.sqrt(Math.pow(Math.abs(node.pos.x - this.mouse.pos.x), 2) + Math.pow(Math.abs(node.pos.y - this.mouse.pos.y), 2));
-				if(dist < node.pos.r){
+				const dist = PVector.dist(this.mouse.pos, node.pos);
+
+				if(dist < node.r){
 					node.onclick();
 				} 
 			}
@@ -241,24 +255,28 @@ class Renderer {
 
 		canvas.addEventListener('mouseup', (e) => { 
 			this.mouse.held = false;
-			this.mouse.pos = { x: null, y: null };
-			this.mouse.pos_last = { x: null, y: null };
+			this.mouse.pos.set(null, null);
+			this.mouse.pos_last.set(null, null);
 			this.mouse.attached = null;
 		}, false);
 
 		// setup canvas event listeners
 		canvas.addEventListener('mousedown', (e) => { 
 			this.mouse.held = true;
-			this.mouse.pos_last.x = this.ctx.offsetX;
-			this.mouse.pos_last.y = this.ctx.offsetY;
-			
+
+			for(const node of this.graph.nodes){
+				const dist = PVector.dist(node.pos, this.mouse.pos);
+				if(dist < node.r){
+					this.mouse.attached = node;
+				}
+			}
+
 		}, false);
 
 		canvas.addEventListener('mousemove', (e) => {
+			this.mouse.pos_last.set(this.mouse.pos.x, this.mouse.pos.y);
+			this.mouse.pos.set(e.offsetX, e.offsetY);
 			if (this.mouse.held) {
-
-				this.mouse.pos.x = e.offsetX;
-				this.mouse.pos.y = e.offsetY
 
 				if(!this.mouse.attached) {
 					// move map
@@ -271,8 +289,6 @@ class Renderer {
 					}
 				}
 
-				this.mouse.pos_last.x = this.mouse.pos.x;
-				this.mouse.pos_last.y = this.mouse.pos.y;
 			}
 		}, false);
 		canvas.addEventListener('wheel', (e) => {
@@ -294,4 +310,3 @@ class Renderer {
 	}
 }
 
-export { Node, Renderer, Graph }
