@@ -20,7 +20,7 @@ const generateNodes = (nodes) => {
 		const y = Math.floor(Math.random() * canvasDOM.height);
 		const r = 30;
 
-		const _node = new Node(node.path, node.name, node.links, x, y, r, "green");
+		const _node = new Node(node.path, node.name, node.links, x, y, r, "#034752");
 		graph.add(_node);
 	}
 }

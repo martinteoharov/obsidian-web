@@ -136,8 +136,8 @@ class Node {
 
 		this.pos        = new PVector(x, y);
 		this.vel        = new PVector(0, 0);
-		this.r          = r;
 		this.weight     = 20 + links.length * 150;
+		this.r          = 20 + links.length * 3;
 
 		this.color = color;
 	}
@@ -162,6 +162,7 @@ class Mouse {
 		this.pos = new PVector(0, 0);
 		this.pos_last = new PVector(0, 0);
 		this.attached = null;
+		this.hovered = null;
 		this.held = false;
 	}
 }
@@ -203,17 +204,19 @@ class Renderer {
 	}
 	
 	draw() {
-		this.ctx.fillStyle = "gray";
+		this.ctx.fillStyle = "#171616";
 		this.ctx.fillRect(0, 0, this.width, this.height);
 
 		// Render links
 		for(const node of this.graph.nodes){
 			const ctx = this.ctx;
+			const links = node.links.map(l => this.graph.findNodeByPath(l));
 
-			for(const link of node.links){
+			this.mouse.hovered === node ? ctx.strokeStyle = "white" : ctx.strokeStyle = "#AA9E9E";
+
+			for(const linkedNode of links){
 				ctx.beginPath();
 
-				const linkedNode = this.graph.findNodeByPath(link);
 				ctx.moveTo(node.pos.x, node.pos.y);
 				ctx.lineTo(linkedNode.pos.x, linkedNode.pos.y);
 
@@ -227,12 +230,15 @@ class Renderer {
 
 			ctx.beginPath();
 			ctx.fillStyle = node.color;
+			
+			// if the node is hovered - highlight it
+			this.mouse.hovered === node ? ctx.strokeStyle = "white" : ctx.strokeStyle = "black";
 
 			ctx.arc(node.pos.x, node.pos.y, node.r, 0, 2 * Math.PI);
 			ctx.stroke();
 			ctx.fill();
-			ctx.font = "20px Georgia";
-			ctx.fillStyle = "black";
+			ctx.font = "16px Georgia";
+			ctx.fillStyle = "#AA9E9E";
 			ctx.fillText(node.name, node.pos.x - node.name.length * 4, node.pos.y + Math.max(node.r * 2, 30));
 
 			ctx.closePath();
@@ -289,7 +295,17 @@ class Renderer {
 					}
 				}
 
+			} 
+			else {
+				this.mouse.hovered = null;
+				for(const node of this.graph.nodes){
+					const dist = PVector.dist(node.pos, this.mouse.pos);
+					if(dist < node.r){
+						this.mouse.hovered = node;
+					}
+				}
 			}
+
 		}, false);
 		canvas.addEventListener('wheel', (e) => {
 			e.preventDefault();
