@@ -10,7 +10,7 @@ canvasDOM.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
 
 const graph = new Graph();
-Renderer.Init(ctx, { width: canvasDOM.width, height: canvasDOM.height }, graph);
+const renderer = new Renderer(ctx, canvasDOM.width, canvasDOM.height, graph);
 
 // Generate sample Nodes
 const generateNodes = (nodes) => {
@@ -20,7 +20,7 @@ const generateNodes = (nodes) => {
 		const y = Math.floor(Math.random() * canvasDOM.height);
 		const r = 30;
 
-		const _node = new Node({path: node.path, name: node.name}, node.links, { x, y, r }, { color:"green", options: { visibleTitle: false } } );
+		const _node = new Node(node.path, node.name, node.links, x, y, r, "green");
 		graph.add(_node);
 	}
 }
@@ -50,8 +50,8 @@ const update = () => {
 	}
 
 	graph.calculateForces();
-	Renderer.updateMouse();
-	Renderer.draw();
+	renderer.updateMouse();
+	renderer.draw();
 
 	c++;
 	window.requestAnimationFrame(update);
