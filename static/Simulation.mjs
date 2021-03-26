@@ -48,8 +48,9 @@ class PVector {
 	}
 
 	normalize(){
-		this.x /= this.length();
-		this.y /= this.length();
+		const len = this.length();
+		this.x /= len;
+		this.y /= len;
 		return this;
 	}
 }
@@ -72,6 +73,45 @@ class Graph {
 	}
 
 	calculateForces(){
+		for(const node of this.nodes) {
+			node.vel.mult(0);
+		}
+
+		// make nodes converge if connected
+		for(const node of this.nodes) {
+			const neighbours = node.links.map(l => this.findNodeByPath(l));
+
+			for(const nei of neighbours) {
+				const dist = PVector.dist(node.pos, nei.pos);
+				const neiPosCopy = new PVector(nei.pos.x, nei.pos.y);
+
+				const force = neiPosCopy.sub(node.pos).normalize(); // normalizealized, |force| = 1
+				force.mult(Graph.G * node.weight * nei.weight * (dist*dist));
+
+				node.vel.add(force);
+			}
+		}
+
+		// make nodes repell each other
+		for(const A of this.nodes) {
+			// A is the node to be changed
+			for(const B of this.nodes) {
+				if(A === B) continue;
+
+				const dist = PVector.dist(A.pos, B.pos);
+				const BPosCopy = new PVector(B.pos.x, B.pos.y);
+
+				const force = BPosCopy.sub(A.pos).normalize(); // normalizealized, |force| = 1
+				force.mult(-Graph.K * A.weight * B.weight / Math.pow(dist, 2.2));
+
+				A.vel.add(force);
+			}
+		}
+
+		for(const node of this.nodes) {
+			if(node.vel.length() > 100) node.vel.normalize().mult(100);
+			node.pos.add(node.vel);
+		}
 
 	}
 }
