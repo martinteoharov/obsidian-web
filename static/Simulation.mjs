@@ -5,9 +5,6 @@ export { PVector, Node, Renderer, Graph }
 const canvasDOM = document.getElementById('canvas');
 
 class PVector {
-	x = null;
-	y = null;
-
 	constructor(x, y){
 		this.x = x;
 		this.y = y;
@@ -79,6 +76,37 @@ class Graph {
 		}
 	}
 
+	calculateAverageForce(){
+		let avg = new PVector(0, 0);
+		for(const node of this.nodes){
+			avg.add(node.vel);
+		}
+		return { x: avg.x, y: avg.y };
+	}
+
+	getStats(){
+
+		const n = this.nodes.length;
+
+		// calc average forces
+		const avg = new PVector(0, 0);
+		for(const node of this.nodes){
+			avg.add(node.vel);
+		}
+
+		// connections
+		const links = null;
+
+		// scale
+		const scale = this.nodes[0].currentScale;
+
+		// pos
+		const pos = null;
+		
+
+		return { n, scale: scale, x: avg.x, y: avg.y, links };
+	}
+
 	calculateForces(){
 		for(const node of this.nodes) {
 			node.vel.mult(0);
@@ -130,14 +158,15 @@ class Graph {
  */
 class Node {
 	constructor(path, name, links, x, y, r, color) {
-		this.path       = path;
-		this.name       = name;
-		this.links      = links;
+		this.path         = path;
+		this.name         = name;
+		this.links        = links;
 
-		this.pos        = new PVector(x, y);
-		this.vel        = new PVector(0, 0);
-		this.weight     = 20 + links.length * 150;
-		this.r          = 20 + links.length * 3;
+		this.pos          = new PVector(x, y);
+		this.vel          = new PVector(0, 0);
+		this.weight       = 20 + links.length * 150;
+		this.r            = 20 + links.length * 3;
+		this.currentScale = 1;
 
 		this.color = color;
 	}
@@ -154,6 +183,7 @@ class Node {
 	scale(val) {
 		this.r *= val;
 		this.pos.mult(val);
+		this.currentScale *= val;
 	}
 }
 
@@ -168,20 +198,6 @@ class Mouse {
 }
 
 class Renderer {
-
-	// pos: obj {x, y}, attached: obj (Node), held: boolean
-	mouse = {
-		pos: {
-			x: null,
-			y: null,
-		},
-		pos_last: {
-			x: 0,
-			y: 0
-		},
-		attached: null,
-		held: false,
-	};
 
 	constructor(ctx, width, height, graph){
 		this.ctx = ctx;

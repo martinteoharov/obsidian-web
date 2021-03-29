@@ -3,11 +3,6 @@
 #
 # Script that generates the links between files and stores
 # them in an easily readable json for the graph. 
-# Also creates hrefs inplace of those links
-#
-# pattern 1: [[***]]    link to other file
-# pattern 2: [[#***]]   link to header of this file
-# pattern 3: [***](URL) link to external resource
 #
 
 import sys
@@ -15,9 +10,11 @@ import os
 import json
 
 # constants
-ROOT_PATH = sys.argv[1] if len(sys.argv) > 1 else "."
+ROOT_PATH = sys.argv[1] if len(sys.argv) > 1 else "../html/"
 ROOT_STATIC = sys.argv[2] if len(sys.argv) > 2 else ROOT_PATH
-OUTFILE = sys.argv[3] if len(sys.argv) > 3 else "graph.json"
+OUTFILE = sys.argv[3] if len(sys.argv) > 3 else "../static/json/graph.json"
+
+print(ROOT_PATH, ROOT_STATIC, OUTFILE)
 
 # Stores links between files
 links = []
@@ -60,12 +57,12 @@ for filename in files:
                 title_src = stripNonStatic(title_src)
                 if title_src:
                     # line is link to outer file
-                    line = re.sub('(\[\[)(.*)(\]\])', '<a href="{}">\\2</a>'.format(title_src), line)
                     links.append(title_src)
                 else:
                     # line is link to header of itself
-                    line = re.sub('(\[\[)(.*)(\]\])', '<a href="{}">\\2</a>'.format(title), line)
+                    pass
 
+            # print redirected to file
             print(line, '')
 
         node = {}
@@ -86,18 +83,5 @@ for node in nodes:
             _node["links"].append(node["path"])
 
 
-
 with open(OUTFILE, "w") as outfile:
     json.dump(nodes, outfile)
-
-
-
-
-
-
-
-
-
-
-
-

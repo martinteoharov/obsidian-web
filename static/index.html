@@ -8,26 +8,43 @@
 			margin: 0 0;
 		}
 
-		#fps {
+		#stats {
 			position: absolute;
 			top: 10px;
 			left: 10px;
-			font-size: 30px;
-			color: black;
+			font-size: 20px;
+			color: white;
 
 			-webkit-user-select: none; /* Safari */        
 			-moz-user-select: none; /* Firefox */
 			-ms-user-select: none; /* IE10+/Edge */
 			user-select: none; /* Standard */
 		}
+		#github {
+			color: white;
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			text-decoration: underline;
+			font-size: 30px;
+		}
+		img {
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+		}
 
 	</style>
 
 	<body>
-		<p id='fps'> fps </p>
+		<p id='stats'> </p>
 		<canvas id='canvas' id='canvas'></canvas>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
 		<script type='module' src='main.js'></script>    
+		
+		<a id='github' href="https://github.com/martinteoharov/obsidian-web"> source
+			<img border="0" alt="W3Schools" src="assets/Octocat/Octocat.jpg">
+		</a>
 	</body>
 </html>

@@ -3,7 +3,7 @@
 import { PVector, Node, Renderer, Graph } from './Simulation.mjs';
 
 // Setup
-const fpsDOM = document.getElementById('fps');
+const statsDOM = document.getElementById('stats');
 const canvasDOM = document.getElementById('canvas');
 canvasDOM.width = window.innerWidth;
 canvasDOM.height = window.innerHeight;
@@ -11,6 +11,7 @@ const ctx = canvas.getContext('2d');
 
 const graph = new Graph();
 const renderer = new Renderer(ctx, canvasDOM.width, canvasDOM.height, graph);
+console.log(renderer);
 
 // Generate sample Nodes
 const generateNodes = (nodes) => {
@@ -46,7 +47,19 @@ const update = () => {
 
 	if(c == 5){
 		c = 0;
-		fpsDOM.innerText = Math.floor(1000 / dt);
+		const stats = graph.getStats();
+
+		const fps   = Math.floor(1000 / dt);
+		const avgX  = (stats.x).toFixed(2);
+		const avgY  = (stats.y).toFixed(2);
+		const n     = (stats.n);
+		const scale = (stats.scale).toFixed(2);
+	
+		statsDOM.innerHTML = `fps: ${ fps } <br>
+			avg vel_x: ${ avgX }; avg vel_y: ${ avgY } <br>
+			nodes: ${ n } <br>
+			scale: ${ scale } <br>
+			`;
 	}
 
 	graph.calculateForces();
