@@ -33,6 +33,7 @@ const generateNodes = (nodes) => {
 		success: (res) => {
 			console.log(res);
 			generateNodes(res);
+			update();
 		}
 	});
 })();
@@ -69,4 +70,3 @@ const update = () => {
 	c++;
 	window.requestAnimationFrame(update);
 }
-update();

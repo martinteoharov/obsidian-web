@@ -99,6 +99,7 @@ class Graph {
 
 		// scale
 		const scale = this.nodes[0].currentScale;
+		
 
 		// pos
 		const pos = null;
