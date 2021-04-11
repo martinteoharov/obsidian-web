@@ -118,6 +118,8 @@ class Graph {
 			const neighbours = node.links.map(l => this.findNodeByPath(l));
 
 			for(const nei of neighbours) {
+				//if(!node || !nei) continue;
+
 				const dist = PVector.dist(node.pos, nei.pos);
 				const neiPosCopy = new PVector(nei.pos.x, nei.pos.y);
 
@@ -182,7 +184,7 @@ class Node {
 	}
 
 	scale(val) {
-		this.r *= val;
+		this.r = Math.max(10, this.r * val);
 		this.pos.mult(val);
 		this.currentScale *= val;
 	}

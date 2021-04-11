@@ -7,7 +7,8 @@ class ComputerScienceSpider(scrapy.spiders.CrawlSpider):
         urls = [
                 'https://en.wikipedia.org/wiki/Computer_science',
         ]
-        allowed_domains = [ 'en.wikipedia.org', ]
+        allowed_domains = [ 'en.wikipedia.org' ]
+
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
 
@@ -15,7 +16,11 @@ class ComputerScienceSpider(scrapy.spiders.CrawlSpider):
         name = response.css('#firstHeading::text').get()
         links = response.xpath('//a/@href').getall()
 
-        wiki_links = [f"https://en.wikipedia.org{_}" for _ in links if "/wiki/" in _ and "wikimedia" not in _ and "http" not in _ and ".png" not in _]
+        incl = ["/wiki/"]
+        excl = ["/wikimedia/", "http", ".png", ":"]
+        wiki_links = [f"https://en.wikipedia.org{_}" for _ in links 
+                    if any(word in _ for word in incl) 
+                    and not any(word in _ for word in excl)]
 
         with open(f'out/{name}.html', 'wb') as f:
             f.write(response.body)
@@ -23,5 +28,3 @@ class ComputerScienceSpider(scrapy.spiders.CrawlSpider):
         for link in wiki_links:
             link = response.urljoin(link)
             yield scrapy.Request(link, callback=self.parse)
-
-        yield { "path":response.request.url, "name": name, "links": wiki_links }

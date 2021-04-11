@@ -17,8 +17,8 @@ console.log(renderer);
 const generateNodes = (nodes) => {
 	console.log("main.js: generate nodes..")
 	for(const node of nodes){
-		const x = Math.floor(Math.random() * canvasDOM.width);
-		const y = Math.floor(Math.random() * canvasDOM.height);
+		const x = Math.floor(Math.random() * canvasDOM.width * 20 - canvasDOM.width * 10);
+		const y = Math.floor(Math.random() * canvasDOM.height * 20 - canvasDOM.width * 10);
 		const r = 30;
 
 		const _node = new Node(node.path, node.name, node.links, x, y, r, "#034752");

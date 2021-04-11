@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Mathematical modelling of infectious disease - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d955734b-58ab-43c5-89d4-1b5dbef89f2a","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Mathematical_modelling_of_infectious_disease","wgTitle":"Mathematical modelling of infectious disease","wgCurRevisionId":1016930402,"wgRevisionId":1016930402,"wgArticleId":951614,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: multiple names: authors list","Articles with short description","Short description is different from Wikidata","All articles with unsourced statements","Articles with unsourced statements from December 2012",
+"Articles with unsourced statements from July 2017","Articles with unsourced statements from June 2020","CS1 maint: location","Epidemiology","Mathematical and theoretical biology","Vaccination","Medical statistics"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Mathematical_modelling_of_infectious_disease","wgRelevantArticleId":951614,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0,"wgULSPosition":"interlanguage","wgWikibaseItemId":
+"Q1252988"};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming",
+"ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.36.0-wmf.38"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:title" content="Mathematical modelling of infectious disease - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Mathematical_modelling_of_infectious_disease"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Mathematical_modelling_of_infectious_disease"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Mathematical_modelling_of_infectious_disease rootpage-Mathematical_modelling_of_infectious_disease skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >Mathematical modelling of infectious disease</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Using mathematical models to understand infectious disease transmission</div>
+<p><a href="/wiki/Mathematical_model" title="Mathematical model">Mathematical models</a> can project how <a href="/wiki/Infectious_diseases" class="mw-redirect" title="Infectious diseases">infectious diseases</a> progress to show the likely outcome of an <a href="/wiki/Epidemic" title="Epidemic">epidemic</a> and help inform <a href="/wiki/Public_health" title="Public health">public health</a> interventions. Models use basic assumptions or collected statistics along with mathematics to find <a href="/wiki/Parameter" title="Parameter">parameters</a> for various infectious diseases and use those parameters to calculate the effects of different interventions, like mass <a href="/wiki/Vaccination" title="Vaccination">vaccination</a> programmes. The modelling can help decide which intervention(s) to avoid and which to trial, or can predict future growth patterns, etc.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Assumptions"><span class="tocnumber">2</span> <span class="toctext">Assumptions</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Types_of_epidemic_models"><span class="tocnumber">3</span> <span class="toctext">Types of epidemic models</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Stochastic"><span class="tocnumber">3.1</span> <span class="toctext">Stochastic</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Deterministic"><span class="tocnumber">3.2</span> <span class="toctext">Deterministic</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Reproduction_number"><span class="tocnumber">4</span> <span class="toctext">Reproduction number</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Endemic_steady_state"><span class="tocnumber">5</span> <span class="toctext">Endemic steady state</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Compartmental_models_in_epidemiology"><span class="tocnumber">6</span> <span class="toctext">Compartmental models in epidemiology</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#The_SIR_model"><span class="tocnumber">6.1</span> <span class="toctext">The SIR model</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Other_compartmental_models"><span class="tocnumber">6.2</span> <span class="toctext">Other compartmental models</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Infectious_disease_dynamics"><span class="tocnumber">7</span> <span class="toctext">Infectious disease dynamics</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Mathematics_of_mass_vaccination"><span class="tocnumber">8</span> <span class="toctext">Mathematics of mass vaccination</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#When_mass_vaccination_cannot_exceed_the_herd_immunity"><span class="tocnumber">8.1</span> <span class="toctext">When mass vaccination cannot exceed the herd immunity</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#When_mass_vaccination_exceeds_the_herd_immunity"><span class="tocnumber">8.2</span> <span class="toctext">When mass vaccination exceeds the herd immunity</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Reliability"><span class="tocnumber">9</span> <span class="toctext">Reliability</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Further_reading"><span class="tocnumber">12</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#External_links"><span class="tocnumber">13</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The modeling of infectious diseases is a tool that has been used to study the mechanisms by which diseases spread, to predict the future course of an outbreak and to evaluate strategies to control an epidemic.<sup id="cite_ref-:13_1-0" class="reference"><a href="#cite_note-:13-1">&#91;1&#93;</a></sup>
+</p><p>The first scientist who systematically tried to quantify <a href="/wiki/Causes_of_death" class="mw-redirect" title="Causes of death">causes of death</a> was <a href="/wiki/John_Graunt" title="John Graunt">John Graunt</a> in his book <i>Natural and Political Observations made upon the Bills of Mortality</i>, in 1662. The bills he studied were listings of numbers and causes of deaths published weekly. Graunt's analysis of causes of death is considered the beginning of the "theory of competing risks" which according to Daley and Gani <sup id="cite_ref-:13_1-1" class="reference"><a href="#cite_note-:13-1">&#91;1&#93;</a></sup> is "a theory that is now well established among modern epidemiologists".
+</p><p>The earliest account of <a href="/wiki/Mathematical_modelling" class="mw-redirect" title="Mathematical modelling">mathematical modelling</a> of spread of disease was carried out in 1760 by <a href="/wiki/Daniel_Bernoulli" title="Daniel Bernoulli">Daniel Bernoulli</a>. Trained as a physician, Bernoulli created a mathematical model to defend the practice of inoculating against <a href="/wiki/Smallpox" title="Smallpox">smallpox</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> The calculations from this model showed that universal inoculation against smallpox would increase the <a href="/wiki/Life_expectancy" title="Life expectancy">life expectancy</a> from 26 years 7 months to 29 years 9 months.<sup id="cite_ref-pmid15334536_3-0" class="reference"><a href="#cite_note-pmid15334536-3">&#91;3&#93;</a></sup> Daniel Bernoulli's work preceded the modern understanding of <a href="/wiki/Germ_theory" class="mw-redirect" title="Germ theory">germ theory</a>.
+</p><p>In the early 20th century,  <a href="/w/index.php?title=William_Hamer&amp;action=edit&amp;redlink=1" class="new" title="William Hamer (page does not exist)">William Hamer</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> and <a href="/wiki/Ronald_Ross" title="Ronald Ross">Ronald Ross</a><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> applied the <a href="/wiki/Law_of_mass_action" title="Law of mass action">law of mass action</a> to explain epidemic behaviour.
+</p><p>The 1920s saw the emergence of compartmental models. The <a href="/wiki/Kermack%E2%80%93McKendrick_theory" title="Kermack–McKendrick theory">Kermack–McKendrick epidemic model</a> (1927) and the <a href="/wiki/Reed%E2%80%93Frost_model" title="Reed–Frost model">Reed–Frost epidemic model</a> (1928) both describe the relationship between <a href="/wiki/Susceptible_individual" title="Susceptible individual">susceptible</a>, infected and <a href="/wiki/Immunity_(medical)" title="Immunity (medical)">immune</a> individuals in a population. The Kermack–McKendrick epidemic model was successful in predicting the behavior of outbreaks very similar to that observed in many recorded epidemics.<sup id="cite_ref-:2_6-0" class="reference"><a href="#cite_note-:2-6">&#91;6&#93;</a></sup>
+</p><p>Recently, <a href="/wiki/Agent-based_model" title="Agent-based model">agent-based models</a> (ABMs) have been used in exchange for simpler <a href="/wiki/Compartmental_models_in_epidemiology" title="Compartmental models in epidemiology">compartmental models</a>, e.g.,.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> For example, epidemiological ABMs have been used to inform public health (nonpharmaceutical) interventions against the spread of <a href="/wiki/Severe_acute_respiratory_syndrome_coronavirus_2" title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</a>.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> Epidemiological ABMs, in spite of their complexity and requiring high computational power, have been criticized for simplifying and unrealistic assumptions.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> Still, they can be useful in informing decisions regarding mitigation and suppression measures in cases when ABMs are accurately calibrated.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Assumptions">Assumptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=2" title="Edit section: Assumptions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Models are only as good as the assumptions on which they are based. If a model makes predictions that are out of line with observed results and the mathematics is correct, the initial assumptions must change to make the model useful.
+</p>
+<ul><li>Rectangular and stationary <a href="/wiki/Population_pyramid" title="Population pyramid">age distribution</a>, i.e., everybody in the population lives to age <i>L</i> and then dies, and for each age (up to <i>L</i>) there is the same number of people in the population. This is often well-justified for developed countries where there is a low infant mortality and much of the population lives to the life expectancy.</li>
+<li>Homogeneous mixing of the population, i.e., individuals of the population under scrutiny assort and <a href="/wiki/Transmission_risks_and_rates" title="Transmission risks and rates">make contact</a> at random and do not mix mostly in a smaller subgroup. This assumption is rarely justified because <a href="/wiki/Social_structure" title="Social structure">social structure</a> is widespread. For example, most people in London only make contact with other Londoners. Further, within London then there are smaller subgroups, such as the Turkish community or teenagers (just to give two examples), who mix with each other more than people outside their group. However, homogeneous mixing is a standard assumption to make the mathematics tractable.</li></ul>
+<h2><span class="mw-headline" id="Types_of_epidemic_models">Types of epidemic models</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=3" title="Edit section: Types of epidemic models">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Stochastic">Stochastic</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=4" title="Edit section: Stochastic">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>"Stochastic" means being or having a random variable. A stochastic model is a tool for estimating probability distributions of potential outcomes by allowing for random variation in one or more inputs over time. Stochastic models depend on the chance variations in risk of exposure, disease and other illness dynamics.
+</p>
+<h3><span class="mw-headline" id="Deterministic">Deterministic</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=5" title="Edit section: Deterministic">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>When dealing with large populations, as in the case of tuberculosis, deterministic or compartmental mathematical models are often used.  In a deterministic model, individuals in the population are assigned to different subgroups or compartments, each representing a specific stage of the epidemic.
+</p><p>The transition rates from one class to another are mathematically expressed as derivatives, hence the model is formulated using differential equations.  While building such models, it must be assumed that the population size in a compartment is differentiable with respect to time and that the epidemic process is deterministic. In other words, the changes in population of a compartment can be calculated using only the history that was used to develop the model.<sup id="cite_ref-:2_6-1" class="reference"><a href="#cite_note-:2-6">&#91;6&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Reproduction_number">Reproduction number</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=6" title="Edit section: Reproduction number">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Basic_reproduction_number" title="Basic reproduction number">Basic reproduction number</a></div><p>The <i>basic reproduction number</i> (denoted by <i>R<sub>0</sub></i>) is a measure of how transferable a disease is. It is the average number of people that a single infectious person will infect over the course of their infection. This quantity determines whether the infection will spread exponentially, die out, or remain constant: if <i>R<sub>0</sub></i> &gt; 1, then each person on average infects more than one other person so the disease will spread; if <i>R<sub>0</sub></i> &lt; 1, then each person infects fewer than one person on average so the disease will die out; and if <i>R<sub>0</sub></i> = 1, then each person will infect on average exactly one other person, so the disease will become <i>endemic:</i> it will move throughout the population but not increase or decrease.
+</p><h2><span class="mw-headline" id="Endemic_steady_state">Endemic steady state</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=7" title="Edit section: Endemic steady state">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An infectious disease is said to be <a href="/wiki/Endemic_(epidemiology)" title="Endemic (epidemiology)">endemic</a> when it can be sustained in a population without the need for external inputs. This means that, on average, each infected person is infecting <i>exactly</i> one other person (any more and the number of people infected will <a href="/wiki/Exponential_growth" title="Exponential growth">grow exponentially</a> and there will be an <a href="/wiki/Epidemic" title="Epidemic">epidemic</a>, any less and the disease will die out). In mathematical terms, that is:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \ R_{0}S\ =1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mi>S</mi>
+        <mtext>&#xA0;</mtext>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ R_{0}S\ =1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/642fc1668c4e820f1802335d3a51c09c76d64de3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.387ex; height:2.509ex;" alt="{\displaystyle \ R_{0}S\ =1.}"/></span></dd></dl>
+<p>The <a href="/wiki/Basic_reproduction_number" title="Basic reproduction number">basic reproduction number</a> (<i>R</i><sub>0</sub>) of the disease, assuming everyone is susceptible, multiplied by the proportion of the population that is actually susceptible (<i>S</i>) must be one (since those who are not susceptible do not feature in our calculations as they cannot contract the disease). Notice that this relation means that for a disease to be in the <a href="/wiki/Endemic_(epidemiology)" title="Endemic (epidemiology)">endemic</a> <a href="/wiki/Steady_state" title="Steady state">steady state</a>, the higher the basic reproduction number, the lower the proportion of the population susceptible must be, and vice versa. This expression has limitations concerning the susceptibility proportion, e.g. the <i>R</i><sub>0</sub> equals 0.5 implicates S has to be 2, however this proportion exceeds to population size.
+</p><p>Assume the rectangular stationary age distribution and let also the ages of infection have the same distribution for each birth year. Let the average age of infection be <i>A</i>, for instance when individuals younger than <i>A</i> are susceptible and those older than <i>A</i> are immune (or infectious). Then it can be shown by an easy argument that the proportion of the population that is susceptible is given by:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S={\frac {A}{L}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>A</mi>
+            <mi>L</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S={\frac {A}{L}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/564dff41b7cec5dec23ad89a723a44498efe2746" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:7.824ex; height:5.343ex;" alt="S={\frac  {A}{L}}."/></span></dd></dl>
+<p>We reiterate that <i>L</i> is the age at which in this model every individual is assumed to die. But the mathematical definition of the endemic steady state can be rearranged to give:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S={\frac {1}{R_{0}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S={\frac {1}{R_{0}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a56c85757682c5dbb6a9c02c5d9f4b88babaf42e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:8.899ex; height:5.676ex;" alt="S={\frac  {1}{R_{0}}}."/></span></dd></dl>
+<p>Therefore, due to the <a href="/wiki/Transitive_property" class="mw-redirect" title="Transitive property">transitive property</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{R_{0}}}={\frac {A}{L}}\Rightarrow R_{0}={\frac {L}{A}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>A</mi>
+            <mi>L</mi>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>L</mi>
+            <mi>A</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{R_{0}}}={\frac {A}{L}}\Rightarrow R_{0}={\frac {L}{A}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/da25f45ea784ff6b46406ac1f5b2e4b9eb478d25" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:22.089ex; height:5.843ex;" alt="{\frac  {1}{R_{0}}}={\frac  {A}{L}}\Rightarrow R_{0}={\frac  {L}{A}}."/></span></dd></dl>
+<p>This provides a simple way to estimate the parameter <i>R</i><sub>0</sub> using easily available data.
+</p><p>For a population with an <a href="/wiki/Population_pyramid" title="Population pyramid">exponential age distribution</a>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R_{0}=1+{\frac {L}{A}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>L</mi>
+            <mi>A</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R_{0}=1+{\frac {L}{A}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd427a99c2667f6baffaf346c021a0221ddc3bdd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:13.146ex; height:5.343ex;" alt="R_{0}=1+{\frac  {L}{A}}."/></span></dd></dl>
+<p>This allows for the basic reproduction number of a disease given <i>A</i> and <i>L</i> in either type of population distribution.
+</p>
+<h2><span class="mw-headline" id="Compartmental_models_in_epidemiology">Compartmental models in epidemiology</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=8" title="Edit section: Compartmental models in epidemiology">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Compartmental_models_in_epidemiology" title="Compartmental models in epidemiology">Compartmental models in epidemiology</a></div><p> Compartmental models are formulated as <a href="/wiki/Markov_chains" class="mw-redirect" title="Markov chains">Markov chains</a>.<sup id="cite_ref-Shalizi_12-0" class="reference"><a href="#cite_note-Shalizi-12">&#91;12&#93;</a></sup> A classic compartmental model in epidemiology is the SIR model, which may be used as a simple model for modeling epidemics. Multiple other types of compartmental models are also employed.
+</p><h3><span class="mw-headline" id="The_SIR_model">The SIR model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=9" title="Edit section: The SIR model">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:252px;"><a href="/wiki/File:SIR-Modell.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/SIR-Modell.svg/250px-SIR-Modell.svg.png" decoding="async" width="250" height="130" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/SIR-Modell.svg/375px-SIR-Modell.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bd/SIR-Modell.svg/500px-SIR-Modell.svg.png 2x" data-file-width="512" data-file-height="266" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:SIR-Modell.svg" class="internal" title="Enlarge"></a></div>Diagram of the SIR model with initial values <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle S(0)=997,I(0)=3,R(0)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>997</mn>
+        <mo>,</mo>
+        <mi>I</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>3</mn>
+        <mo>,</mo>
+        <mi>R</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle S(0)=997,I(0)=3,R(0)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a77585721df69817779b39901aee0f8df90cfbd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:30.526ex; height:2.843ex;" alt="{\textstyle S(0)=997,I(0)=3,R(0)=0}"/></span>, and rates for infection <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \beta =0.4}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>&#x03B2;<!-- β --></mi>
+        <mo>=</mo>
+        <mn>0.4</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \beta =0.4}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b17c3ffeb714ca5640e30ba5b534fa8f8398e35a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.402ex; height:2.509ex;" alt="{\textstyle \beta =0.4}"/></span> and for recovery <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \gamma =0.04}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo>=</mo>
+        <mn>0.04</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \gamma =0.04}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29bba33f60e4bbee2bf06d65869525c8d2a5ef32" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.495ex; height:2.676ex;" alt="{\textstyle \gamma =0.04}"/></span></div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:252px;"><a href="/wiki/File:SIR_model_anim.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/20/SIR_model_anim.gif/250px-SIR_model_anim.gif" decoding="async" width="250" height="197" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/20/SIR_model_anim.gif/375px-SIR_model_anim.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/20/SIR_model_anim.gif/500px-SIR_model_anim.gif 2x" data-file-width="1048" data-file-height="827" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:SIR_model_anim.gif" class="internal" title="Enlarge"></a></div>Animation of the SIR model with initial values <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle S(0)=997,I(0)=3,R(0)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>997</mn>
+        <mo>,</mo>
+        <mi>I</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>3</mn>
+        <mo>,</mo>
+        <mi>R</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle S(0)=997,I(0)=3,R(0)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a77585721df69817779b39901aee0f8df90cfbd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:30.526ex; height:2.843ex;" alt="{\textstyle S(0)=997,I(0)=3,R(0)=0}"/></span>, and rate of recovery <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \gamma =0.04}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo>=</mo>
+        <mn>0.04</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \gamma =0.04}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29bba33f60e4bbee2bf06d65869525c8d2a5ef32" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.495ex; height:2.676ex;" alt="{\textstyle \gamma =0.04}"/></span>. The animation shows the effect of reducing the rate of infection from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \beta =0.5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>&#x03B2;<!-- β --></mi>
+        <mo>=</mo>
+        <mn>0.5</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \beta =0.5}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cd3f79780b56eb52eef380c89e5c3e9f3df30099" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.402ex; height:2.509ex;" alt="{\textstyle \beta =0.5}"/></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \beta =0.12}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>&#x03B2;<!-- β --></mi>
+        <mo>=</mo>
+        <mn>0.12</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \beta =0.12}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b19daf42738b50a121a89556df3cc8054eaefa28" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.565ex; height:2.509ex;" alt="{\textstyle \beta =0.12}"/></span>. If there is no medicine or vaccination available, it is only possible to reduce the infection rate (often referred to as "<a href="/wiki/Flattening_the_curve" title="Flattening the curve">flattening the curve</a>") by appropriate measures such as social distancing.</div></div></div>
+<p>In 1927, W. O. Kermack and A. G. McKendrick created a model in which they considered a fixed population with only three compartments: susceptible, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed5c98226fcae6540afa928ccb8c2245844ac0a8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.148ex; height:2.843ex;" alt="S(t)"/></span>; infected, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e2434c9d80c34c95e25cc81ba6700f756a29dac5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.821ex; height:2.843ex;" alt="I(t)"/></span>; and recovered, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>R</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/83f5825ff7b37103bb1978b2cecddf8423a0d3f1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.413ex; height:2.843ex;" alt="R(t)"/></span>. The compartments used for this model consist of three classes:<sup id="cite_ref-pmid2059741_13-0" class="reference"><a href="#cite_note-pmid2059741-13">&#91;13&#93;</a></sup>
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed5c98226fcae6540afa928ccb8c2245844ac0a8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.148ex; height:2.843ex;" alt="S(t)"/></span> is used to represent the individuals not yet infected with the disease at time t, or those susceptible to the disease of the population.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e2434c9d80c34c95e25cc81ba6700f756a29dac5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.821ex; height:2.843ex;" alt="I(t)"/></span> denotes the individuals of the population who have been infected with the disease and are capable of spreading the disease to those in the susceptible category.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>R</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/83f5825ff7b37103bb1978b2cecddf8423a0d3f1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.413ex; height:2.843ex;" alt="R(t)"/></span> is the compartment used for the individuals of the population who have been infected and then removed from the disease, either due to immunization or due to death. Those in this category are not able to be infected again or to transmit the infection to others.</li></ul>
+<h3><span class="mw-headline" id="Other_compartmental_models">Other compartmental models</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=10" title="Edit section: Other compartmental models">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are many modifications of the SIR model, including those that include births and deaths, where upon recovery there is no immunity (SIS model), where immunity lasts only for a short period of time (SIRS), where there is a latent period of the disease where the person is not infectious (<a href="/wiki/Compartmental_models_in_epidemiology" title="Compartmental models in epidemiology">SEIS and SEIR</a>), and where infants can be born with immunity (MSIR).
+For evaluating the epidemic threshold in the SIS model on networks see Parshani et al.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Infectious_disease_dynamics">Infectious disease dynamics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=11" title="Edit section: Infectious disease dynamics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Mathematical models need to integrate the increasing volume of <a href="/wiki/Numerical_data" class="mw-redirect" title="Numerical data">data</a> being generated on <a href="/wiki/Host_(biology)" title="Host (biology)">host</a>-<a href="/wiki/Pathogen" title="Pathogen">pathogen</a> interactions. Many theoretical studies of the <a href="/wiki/Population_dynamics" title="Population dynamics">population dynamics</a>, structure and evolution of <a href="/wiki/Infectious_disease" class="mw-redirect" title="Infectious disease">infectious diseases</a> of <a href="/wiki/Plants" class="mw-redirect" title="Plants">plants</a> and animals, including humans, are concerned with this problem.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (December 2012)">citation needed</span></a></i>&#93;</sup>
+A model to assess the probability for a worldwide spreading and declare pandemic has been recently developed by Valdez et al.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup>
+Research topics include:
+</p>
+<ul><li><a href="/wiki/Pandemic" title="Pandemic">Pandemic</a></li>
+<li><a href="/wiki/Transmission_(medicine)" title="Transmission (medicine)">transmission</a>, spread and control of infection</li>
+<li><a href="/wiki/Epidemiological" class="mw-redirect" title="Epidemiological">epidemiological</a> networks</li>
+<li><a href="/wiki/Spatial_epidemiology" title="Spatial epidemiology">spatial epidemiology</a></li>
+<li>persistence of pathogens within hosts</li>
+<li>intra-host dynamics</li>
+<li><a href="/wiki/Immune_system" title="Immune system">immuno</a>-epidemiology</li>
+<li><a href="/wiki/Virulence" title="Virulence">virulence</a></li>
+<li><a href="/wiki/Strain_(biology)" title="Strain (biology)">Strain (biology)</a> structure and interactions</li>
+<li><a href="/wiki/Antigenic_shift" title="Antigenic shift">antigenic shift</a></li>
+<li><a href="/wiki/Phylodynamics" class="mw-redirect" title="Phylodynamics">phylodynamics</a></li>
+<li>pathogen <a href="/wiki/Population_genetics" title="Population genetics">population genetics</a></li>
+<li><a href="/wiki/Evolution" title="Evolution">evolution</a> and spread of <a href="/wiki/Drug_resistance" title="Drug resistance">resistance</a></li>
+<li>role of host genetic factors</li>
+<li>statistical and mathematical tools and innovations</li>
+<li>role and identification of <a href="/wiki/Infection_reservoir" class="mw-redirect" title="Infection reservoir">infection reservoirs</a></li></ul>
+<h2><span class="mw-headline" id="Mathematics_of_mass_vaccination">Mathematics of mass vaccination</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=12" title="Edit section: Mathematics of mass vaccination">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If the proportion of the population that is immune exceeds the <a href="/wiki/Herd_immunity" title="Herd immunity">herd immunity</a> level for the disease, then the disease can no longer persist in the population. Thus, if this level can be exceeded by vaccination, the disease can be eliminated. An example of this being successfully achieved worldwide is the global <a href="/wiki/Smallpox_eradication" class="mw-redirect" title="Smallpox eradication">smallpox eradication</a>, with the last wild case in 1977. The <a href="/wiki/WHO" class="mw-redirect" title="WHO">WHO</a> is carrying out a similar <a href="/wiki/Poliomyelitis_eradication" class="mw-redirect" title="Poliomyelitis eradication">vaccination campaign to eradicate polio</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2017)">citation needed</span></a></i>&#93;</sup>
+</p><p>The herd immunity level will be denoted <i>q</i>. Recall that, for a stable state:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R_{0}\cdot S=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi>S</mi>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R_{0}\cdot S=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e92ee7abd28660fee15982efd7afbb52a93940a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.904ex; height:2.509ex;" alt="{\displaystyle R_{0}\cdot S=1.}"/></span></dd></dl>
+<p>In turn,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R_{0}={\frac {N}{S}}={\frac {\mu N\operatorname {E} (T_{L})}{\mu N\operatorname {E} [\min(T_{L},T_{S})]}}={\frac {\operatorname {E} (T_{L})}{\operatorname {E} [\min(T_{L},T_{S})]}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>N</mi>
+            <mi>S</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03BC;<!-- μ --></mi>
+              <mi>N</mi>
+              <mi mathvariant="normal">E</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>L</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>&#x03BC;<!-- μ --></mi>
+              <mi>N</mi>
+              <mi mathvariant="normal">E</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">[</mo>
+              <mo movablelimits="true" form="prefix">min</mo>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>L</mi>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>S</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mo stretchy="false">]</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">E</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>L</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">E</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">[</mo>
+              <mo movablelimits="true" form="prefix">min</mo>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>L</mi>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>S</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mo stretchy="false">]</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R_{0}={\frac {N}{S}}={\frac {\mu N\operatorname {E} (T_{L})}{\mu N\operatorname {E} [\min(T_{L},T_{S})]}}={\frac {\operatorname {E} (T_{L})}{\operatorname {E} [\min(T_{L},T_{S})]}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bfedf01ca9b6742ed336fc18d22c1fe3025e83bd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:51.093ex; height:6.509ex;" alt="{\displaystyle R_{0}={\frac {N}{S}}={\frac {\mu N\operatorname {E} (T_{L})}{\mu N\operatorname {E} [\min(T_{L},T_{S})]}}={\frac {\operatorname {E} (T_{L})}{\operatorname {E} [\min(T_{L},T_{S})]}},}"/></span></dd></dl>
+<p>which is approximately:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\operatorname {\operatorname {E} } (T_{L})}{\operatorname {\operatorname {E} } (T_{S})}}=1+{\frac {\lambda }{\mu }}={\frac {\beta N}{v}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+                <mi mathvariant="normal">E</mi>
+              </mrow>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>L</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+                <mi mathvariant="normal">E</mi>
+              </mrow>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>S</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>&#x03BB;<!-- λ --></mi>
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03B2;<!-- β --></mi>
+              <mi>N</mi>
+            </mrow>
+            <mi>v</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\operatorname {\operatorname {E} } (T_{L})}{\operatorname {\operatorname {E} } (T_{S})}}=1+{\frac {\lambda }{\mu }}={\frac {\beta N}{v}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c4c56465064afd4b5a1ccbad8fac2fb667e9610" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:24.254ex; height:6.509ex;" alt="{\displaystyle {\frac {\operatorname {\operatorname {E} } (T_{L})}{\operatorname {\operatorname {E} } (T_{S})}}=1+{\frac {\lambda }{\mu }}={\frac {\beta N}{v}}.}"/></span></dd></dl>
+<p><i>S</i> will be (1&#160;−&#160;<i>q</i>), since <i>q</i> is the proportion of the population that is immune and <i>q</i>&#160;+&#160;<i>S</i> must equal one  (since in this simplified model, everyone is either susceptible or immune). Then:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}&amp;R_{0}\cdot (1-q)=1,\\[6pt]&amp;1-q={\frac {1}{R_{0}}},\\[6pt]&amp;q=1-{\frac {1}{R_{0}}}.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="0.9em 0.9em 0.3em" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>R</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>q</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mn>1</mn>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>q</mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <msub>
+                      <mi>R</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                  </mfrac>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi>q</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <msub>
+                      <mi>R</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                  </mfrac>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}&amp;R_{0}\cdot (1-q)=1,\\[6pt]&amp;1-q={\frac {1}{R_{0}}},\\[6pt]&amp;q=1-{\frac {1}{R_{0}}}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3e9c4b64bf2994d62ebaae1f24c481da90d3e47" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -8.171ex; width:17.038ex; height:17.509ex;" alt="{\displaystyle {\begin{aligned}&amp;R_{0}\cdot (1-q)=1,\\[6pt]&amp;1-q={\frac {1}{R_{0}}},\\[6pt]&amp;q=1-{\frac {1}{R_{0}}}.\end{aligned}}}"/></span></dd></dl>
+<p>Remember that this is the threshold level. If the proportion of immune individuals <i>exceeds</i> this level due to a mass vaccination programme, the disease will die out.
+</p><p>We have just calculated the <b>critical immunisation threshold</b> (denoted <i>q<sub>c</sub></i>). It is the minimum proportion of the population that must be immunised at birth (or close to birth) in order for the infection to die out in the population.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q_{c}=1-{\frac {1}{R_{0}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>c</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{c}=1-{\frac {1}{R_{0}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4dd0a8404e16bc9bc5db43d65269c1a89a961446" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:13.384ex; height:5.676ex;" alt="{\displaystyle q_{c}=1-{\frac {1}{R_{0}}}.}"/></span></dd></dl>
+<p>Because the fraction of the final size of the population <i>p</i> that is never infected can be defined as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{t\to \infty }S(t)=e^{-\int _{0}^{\infty }\lambda (t)\,dt}=1-p.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>t</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <msubsup>
+              <mo>&#x222B;<!-- ∫ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+              </mrow>
+            </msubsup>
+            <mi>&#x03BB;<!-- λ --></mi>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mspace width="thinmathspace" />
+            <mi>d</mi>
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>p</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{t\to \infty }S(t)=e^{-\int _{0}^{\infty }\lambda (t)\,dt}=1-p.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/70994288f54e71d55df4e8576c1d2d2ea84fdea7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:31.041ex; height:4.676ex;" alt="{\displaystyle \lim _{t\to \infty }S(t)=e^{-\int _{0}^{\infty }\lambda (t)\,dt}=1-p.}"/></span></dd></dl>
+<p>Hence,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p=1-e^{-\int _{0}^{\infty }\beta I(t)\,dt}=1-e^{-R_{0}p}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <msubsup>
+              <mo>&#x222B;<!-- ∫ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+              </mrow>
+            </msubsup>
+            <mi>&#x03B2;<!-- β --></mi>
+            <mi>I</mi>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mspace width="thinmathspace" />
+            <mi>d</mi>
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <mi>p</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p=1-e^{-\int _{0}^{\infty }\beta I(t)\,dt}=1-e^{-R_{0}p}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/455c15190b3a8e4f20aa503abb80c6d6ac3b5f26" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:33.03ex; height:3.343ex;" alt="{\displaystyle p=1-e^{-\int _{0}^{\infty }\beta I(t)\,dt}=1-e^{-R_{0}p}.}"/></span></dd></dl>
+<p>Solving for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R_{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R_{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b8916196f182fcbaaca54f931176a4a4f5769cc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.818ex; height:2.509ex;" alt="R_{0}"/></span>, we obtain:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R_{0}={\frac {-\ln(1-p)}{p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>ln</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>p</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R_{0}={\frac {-\ln(1-p)}{p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cef65b48bf15907eb159d46af097418c60a33157" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:18.516ex; height:6.176ex;" alt="{\displaystyle R_{0}={\frac {-\ln(1-p)}{p}}.}"/></span></dd></dl>
+<h3><span class="mw-headline" id="When_mass_vaccination_cannot_exceed_the_herd_immunity">When mass vaccination cannot exceed the herd immunity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=13" title="Edit section: When mass vaccination cannot exceed the herd immunity">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If the vaccine used is insufficiently effective or the required coverage cannot be reached (for example due to <a href="/wiki/MMR_vaccine_controversy" class="mw-redirect" title="MMR vaccine controversy">popular resistance</a>), the programme may fail to exceed <i>q<sub>c</sub></i>. Such a programme can, however, disturb the balance of the infection without eliminating it, often causing unforeseen problems.
+</p><p>Suppose that a proportion of the population <i>q</i> (where <i>q</i> &lt; <i>q<sub>c</sub></i>) is immunised at birth against an infection with <i>R</i><sub>0</sub>&#160;&gt;&#160;1. The <a href="/wiki/Vaccination" title="Vaccination">vaccination</a> programme changes <i>R</i><sub>0</sub> to <i>R<sub>q</sub></i> where
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R_{q}=R_{0}(1-q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R_{q}=R_{0}(1-q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/219b7033a4e0b05752a1d02b4eb0e7b2889a1b8b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:15.551ex; height:3.009ex;" alt="{\displaystyle R_{q}=R_{0}(1-q)}"/></span></dd></dl>
+<p>This change occurs simply because there are now fewer susceptibles in the population who can be infected. <i>R<sub>q</sub></i> is simply <i>R</i><sub>0</sub> minus those that would normally be infected but that cannot be now since they are immune.
+</p><p>As a consequence of this lower <a href="/wiki/Basic_reproduction_number" title="Basic reproduction number">basic reproduction number</a>, the average age of infection <i>A</i> will also change to some new value <i>A<sub>q</sub></i> in those who have been left unvaccinated.
+</p><p>Recall the relation that linked <i>R</i><sub>0</sub>, <i>A</i> and <i>L</i>. Assuming that life expectancy has not changed, now:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R_{q}={\frac {L}{A_{q}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>L</mi>
+            <msub>
+              <mi>A</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>q</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R_{q}={\frac {L}{A_{q}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e780a9fff42ac900a6435f8764b3d93d26381d44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:10.066ex; height:6.009ex;" alt="{\displaystyle R_{q}={\frac {L}{A_{q}}},}"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A_{q}={\frac {L}{R_{q}}}={\frac {L}{R_{0}(1-q)}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>L</mi>
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>q</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>L</mi>
+            <mrow>
+              <msub>
+                <mi>R</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>0</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>q</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A_{q}={\frac {L}{R_{q}}}={\frac {L}{R_{0}(1-q)}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1871cafb51f5bd2672ae04845511ac15d0b76631" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:23.7ex; height:6.009ex;" alt="{\displaystyle A_{q}={\frac {L}{R_{q}}}={\frac {L}{R_{0}(1-q)}}.}"/></span></dd></dl>
+<p>But <i>R</i><sub>0</sub> = <i>L</i>/<i>A</i> so:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A_{q}={\frac {L}{(L/A)(1-q)}}={\frac {AL}{L(1-q)}}={\frac {A}{1-q}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>L</mi>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>L</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mi>A</mi>
+              <mo stretchy="false">)</mo>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>q</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>A</mi>
+              <mi>L</mi>
+            </mrow>
+            <mrow>
+              <mi>L</mi>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>q</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>A</mi>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>q</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A_{q}={\frac {L}{(L/A)(1-q)}}={\frac {AL}{L(1-q)}}={\frac {A}{1-q}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b562899ee00f21a144dc9c7a012b0bd93b42f96" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:41.899ex; height:6.176ex;" alt="{\displaystyle A_{q}={\frac {L}{(L/A)(1-q)}}={\frac {AL}{L(1-q)}}={\frac {A}{1-q}}.}"/></span></dd></dl>
+<p>Thus the vaccination programme will raise the average age of infection, another mathematical justification for a result that might have been intuitively obvious. Unvaccinated individuals now experience a reduced <a href="/wiki/Force_of_infection" title="Force of infection">force of infection</a> due to the presence of the vaccinated group.
+</p><p>However, it is important to consider this effect when vaccinating against diseases that are more severe in older people. A vaccination programme against such a disease that does not exceed <i>q<sub>c</sub></i> may cause more deaths and complications than there were before the programme was brought into force as individuals will be catching the disease later in life. These unforeseen outcomes of a vaccination programme are called <b>perverse effects</b>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (June 2020)">citation needed</span></a></i>&#93;</sup>
+</p>
+<h3><span class="mw-headline" id="When_mass_vaccination_exceeds_the_herd_immunity">When mass vaccination exceeds the herd immunity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=14" title="Edit section: When mass vaccination exceeds the herd immunity">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If a vaccination programme causes the proportion of immune individuals in a population to exceed the critical threshold for a significant length of time, transmission of the infectious disease in that population will stop. This is known as elimination of the infection and is different from <a href="/wiki/Disease_eradication" class="mw-redirect" title="Disease eradication">eradication</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2017)">citation needed</span></a></i>&#93;</sup>
+</p>
+<dl><dt>Elimination</dt>
+<dd>Interruption of endemic transmission of an infectious disease, which occurs if each infected individual infects less than one other, is achieved by maintaining vaccination coverage to keep the proportion of immune individuals above the critical immunisation threshold.</dd>
+<dt>Eradication</dt>
+<dd>Reduction of infective organisms in the wild worldwide to zero. So far, this has only been achieved for <a href="/wiki/Smallpox" title="Smallpox">smallpox</a> and <a href="/wiki/Rinderpest" title="Rinderpest">rinderpest</a>. To get to eradication, elimination in all world regions must be achieved.</dd></dl>
+<h2><span class="mw-headline" id="Reliability">Reliability</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=15" title="Edit section: Reliability">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Models have the advantage of examining multiple outcomes simultaneously, rather than making a single forecast. Models have shown broad degrees of reliability in past pandemics, such as <a href="/wiki/SARS" class="mw-redirect" title="SARS">SARS</a>, <a href="/wiki/Swine_flu" class="mw-redirect" title="Swine flu">Swine flu</a>, <a href="/wiki/MERS" class="mw-redirect" title="MERS">MERS</a> and <a href="/wiki/Ebola" title="Ebola">Ebola</a>.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=16" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r998391716">.mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}</style><div class="div-col" style="column-width: 40em;">
+<ul><li><a href="/wiki/Pandemic" title="Pandemic">Pandemic</a></li>
+<li><a href="/wiki/Compartmental_models_in_epidemiology" title="Compartmental models in epidemiology">Compartmental models in epidemiology</a></li>
+<li><a href="/wiki/Contact_tracing" title="Contact tracing">Contact tracing</a></li>
+<li><a href="/wiki/Critical_community_size" title="Critical community size">Critical community size</a></li>
+<li><a href="/wiki/Disease_surveillance" title="Disease surveillance">Disease surveillance</a></li>
+<li><a href="/wiki/Ecosystem_model" title="Ecosystem model">Ecosystem model</a></li>
+<li><a href="/wiki/Force_of_infection" title="Force of infection">Force of infection</a></li>
+<li><a href="/wiki/Landscape_epidemiology" title="Landscape epidemiology">Landscape epidemiology</a></li>
+<li><a href="/wiki/Next-generation_matrix" title="Next-generation matrix">Next-generation matrix</a></li>
+<li><a href="/wiki/Risk_factor" title="Risk factor">Risk factor</a></li>
+<li><a href="/wiki/Sexual_network" title="Sexual network">Sexual network</a></li>
+<li><a href="/wiki/Transmission_risks_and_rates" title="Transmission risks and rates">Transmission risks and rates</a></li>
+<li><a href="/wiki/WAIFW_matrix" title="WAIFW matrix">WAIFW matrix</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=17" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-:13-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-:13_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:13_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r999302996">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFDaleyGani2005" class="citation book cs1">Daley DJ, Gani J (2005). <i>Epidemic Modeling: An Introduction</i>. New York: Cambridge University Press.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Epidemic+Modeling%3A+An+Introduction.&amp;rft.place=New+York&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2005&amp;rft.aulast=Daley&amp;rft.aufirst=DJ&amp;rft.au=Gani%2C+J&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFHethcote2000" class="citation journal cs1">Hethcote HW (2000). "The mathematics of infectious diseases". <i>Society for Industrial and Applied Mathematics</i>. <b>42</b>: 599–653.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Society+for+Industrial+and+Applied+Mathematics&amp;rft.atitle=The+mathematics+of+infectious+diseases.&amp;rft.volume=42&amp;rft.pages=599-653&amp;rft.date=2000&amp;rft.aulast=Hethcote&amp;rft.aufirst=HW&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-pmid15334536-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-pmid15334536_3-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFBlowerBernoulli2004" class="citation journal cs1">Blower S, Bernoulli D (2004). "An attempt at a new analysis of the mortality caused by smallpox and of the advantages of inoculation to prevent it. 1766". <i>Reviews in Medical Virology</i>. <b>14</b> (5): 275–88. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1002%2Frmv.443">10.1002/rmv.443</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/15334536">15334536</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:8169180">8169180</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Reviews+in+Medical+Virology&amp;rft.atitle=An+attempt+at+a+new+analysis+of+the+mortality+caused+by+smallpox+and+of+the+advantages+of+inoculation+to+prevent+it.+1766&amp;rft.volume=14&amp;rft.issue=5&amp;rft.pages=275-88&amp;rft.date=2004&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A8169180%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F15334536&amp;rft_id=info%3Adoi%2F10.1002%2Frmv.443&amp;rft.aulast=Blower&amp;rft.aufirst=S&amp;rft.au=Bernoulli%2C+D&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFHamer1928" class="citation book cs1">Hamer W (1928). <i>Epidemiology Old and New</i>. London: Kegan Paul.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Epidemiology+Old+and+New&amp;rft.place=London&amp;rft.pub=Kegan+Paul&amp;rft.date=1928&amp;rft.aulast=Hamer&amp;rft.aufirst=W&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFRoss1910" class="citation book cs1">Ross R (1910). <a rel="nofollow" class="external text" href="http://catalog.hathitrust.org/Record/001587831"><i>The Prevention of Malaria</i></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Prevention+of+Malaria&amp;rft.date=1910&amp;rft.aulast=Ross&amp;rft.aufirst=Ronald&amp;rft_id=http%3A%2F%2Fcatalog.hathitrust.org%2FRecord%2F001587831&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:2-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-:2_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:2_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFBrauerCastillo-Chávez2001" class="citation book cs1">Brauer F, Castillo-Chávez C (2001). <i>Mathematical Models in Population Biology and Epidemiology</i>. New York: Springer.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mathematical+Models+in+Population+Biology+and+Epidemiology.&amp;rft.place=New+York&amp;rft.pub=Springer&amp;rft.date=2001&amp;rft.aulast=Brauer&amp;rft.aufirst=F&amp;rft.au=Castillo-Ch%C3%A1vez%2C+C&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFEisingerThulke2008" class="citation journal cs1">Eisinger D, Thulke HH (April 2008). <a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC2326892">"Spatial pattern formation facilitates eradication of infectious diseases"</a>. <i>The Journal of Applied Ecology</i>. <b>45</b> (2): 415–423. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1111%2Fj.1365-2664.2007.01439.x">10.1111/j.1365-2664.2007.01439.x</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC2326892">2326892</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/18784795">18784795</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Journal+of+Applied+Ecology&amp;rft.atitle=Spatial+pattern+formation+facilitates+eradication+of+infectious+diseases&amp;rft.volume=45&amp;rft.issue=2&amp;rft.pages=415-423&amp;rft.date=2008-04&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC2326892%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F18784795&amp;rft_id=info%3Adoi%2F10.1111%2Fj.1365-2664.2007.01439.x&amp;rft.aulast=Eisinger&amp;rft.aufirst=D&amp;rft.au=Thulke%2C+HH&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC2326892&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFAdam2020" class="citation journal cs1">Adam D (April 2020). <a rel="nofollow" class="external text" href="https://www.nature.com/articles/d41586-020-01003-6">"Special report: The simulations driving the world's response to COVID-19"</a>. <i>Nature</i>. <b>580</b> (7803): 316–318. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2020Natur.580..316A">2020Natur.580..316A</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1038%2Fd41586-020-01003-6">10.1038/d41586-020-01003-6</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/32242115">32242115</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:214771531">214771531</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Nature&amp;rft.atitle=Special+report%3A+The+simulations+driving+the+world%27s+response+to+COVID-19&amp;rft.volume=580&amp;rft.issue=7803&amp;rft.pages=316-318&amp;rft.date=2020-04&amp;rft_id=info%3Adoi%2F10.1038%2Fd41586-020-01003-6&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A214771531%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F32242115&amp;rft_id=info%3Abibcode%2F2020Natur.580..316A&amp;rft.aulast=Adam&amp;rft.aufirst=D&amp;rft_id=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-020-01003-6&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFSquazzoniPolhillEdmondsAhrweiler2020" class="citation journal cs1">Squazzoni F, Polhill JG, Edmonds B, Ahrweiler P, Antosz P, Scholz G,  et&#160;al. (2020). <a rel="nofollow" class="external text" href="http://jasss.soc.surrey.ac.uk/23/2/10.html">"Computational Models That Matter During a Global Pandemic Outbreak: A Call to Action"</a>. <i>Journal of Artificial Societies and Social Simulation</i>. <b>23</b> (2): 10. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.18564%2Fjasss.4298">10.18564/jasss.4298</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/1460-7425">1460-7425</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:216426533">216426533</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Artificial+Societies+and+Social+Simulation&amp;rft.atitle=Computational+Models+That+Matter+During+a+Global+Pandemic+Outbreak%3A+A+Call+to+Action&amp;rft.volume=23&amp;rft.issue=2&amp;rft.pages=10&amp;rft.date=2020&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A216426533%23id-name%3DS2CID&amp;rft.issn=1460-7425&amp;rft_id=info%3Adoi%2F10.18564%2Fjasss.4298&amp;rft.aulast=Squazzoni&amp;rft.aufirst=F&amp;rft.au=Polhill%2C+JG&amp;rft.au=Edmonds%2C+B&amp;rft.au=Ahrweiler%2C+P&amp;rft.au=Antosz%2C+P&amp;rft.au=Scholz%2C+G&amp;rft.au=Chappin%2C+%C3%89&amp;rft.au=Borit%2C+M&amp;rft.au=Verhagen%2C+H&amp;rft.au=Giardini%2C+F&amp;rft.au=Gilbert%2C+N&amp;rft_id=http%3A%2F%2Fjasss.soc.surrey.ac.uk%2F23%2F2%2F10.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFSridharMajumder2020" class="citation journal cs1">Sridhar D, Majumder MS (April 2020). <a rel="nofollow" class="external text" href="https://www.bmj.com/content/369/bmj.m1567">"Modelling the pandemic"</a>. <i>BMJ</i>. <b>369</b>: m1567. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1136%2Fbmj.m1567">10.1136/bmj.m1567</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/32317328">32317328</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:216074714">216074714</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=BMJ&amp;rft.atitle=Modelling+the+pandemic&amp;rft.volume=369&amp;rft.pages=m1567&amp;rft.date=2020-04&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A216074714%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F32317328&amp;rft_id=info%3Adoi%2F10.1136%2Fbmj.m1567&amp;rft.aulast=Sridhar&amp;rft.aufirst=D&amp;rft.au=Majumder%2C+MS&amp;rft_id=https%3A%2F%2Fwww.bmj.com%2Fcontent%2F369%2Fbmj.m1567&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFMaziarzZach2020" class="citation journal cs1">Maziarz M, Zach M (October 2020). <a rel="nofollow" class="external text" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jep.13459">"Agent-based modelling for SARS-CoV-2 epidemic prediction and intervention assessment: A methodological appraisal"</a>. <i>Journal of Evaluation in Clinical Practice</i>. <b>26</b> (5): 1352–1360. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1111%2Fjep.13459">10.1111/jep.13459</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC7461315">7461315</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/32820573">32820573</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Evaluation+in+Clinical+Practice&amp;rft.atitle=Agent-based+modelling+for+SARS-CoV-2+epidemic+prediction+and+intervention+assessment%3A+A+methodological+appraisal&amp;rft.volume=26&amp;rft.issue=5&amp;rft.pages=1352-1360&amp;rft.date=2020-10&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC7461315%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F32820573&amp;rft_id=info%3Adoi%2F10.1111%2Fjep.13459&amp;rft.aulast=Maziarz&amp;rft.aufirst=M&amp;rft.au=Zach%2C+M&amp;rft_id=https%3A%2F%2Fonlinelibrary.wiley.com%2Fdoi%2Fabs%2F10.1111%2Fjep.13459&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Shalizi-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-Shalizi_12-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFCosma_Shalizi2018" class="citation web cs1">Cosma Shalizi (15 November 2018). <a rel="nofollow" class="external text" href="http://www.stat.cmu.edu/~cshalizi/dst/18/lectures/21/lecture-21.pdf">"Data over Space and Time; Lecture 21: Compartment Models"</a> <span class="cs1-format">(PDF)</span>. <i>Carnegie Mellon University</i><span class="reference-accessdate">. Retrieved <span class="nowrap">September 19,</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Carnegie+Mellon+University&amp;rft.atitle=Data+over+Space+and+Time%3B+Lecture+21%3A+Compartment+Models&amp;rft.date=2018-11-15&amp;rft.au=Cosma+Shalizi&amp;rft_id=http%3A%2F%2Fwww.stat.cmu.edu%2F~cshalizi%2Fdst%2F18%2Flectures%2F21%2Flecture-21.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-pmid2059741-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-pmid2059741_13-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFKermackMcKendrick1991" class="citation journal cs1">Kermack WO, McKendrick AG (1991). <a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF02464423">"Contributions to the mathematical theory of epidemics--I. 1927"</a>. <i>Bulletin of Mathematical Biology</i>. <b>53</b> (1–2): 33–55. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1927RSPSA.115..700K">1927RSPSA.115..700K</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF02464423">10.1007/BF02464423</a></span>. <a href="/wiki/JSTOR_(identifier)" class="mw-redirect" title="JSTOR (identifier)">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/94815">94815</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/2059741">2059741</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Bulletin+of+Mathematical+Biology&amp;rft.atitle=Contributions+to+the+mathematical+theory+of+epidemics--I.+1927&amp;rft.volume=53&amp;rft.issue=1%E2%80%932&amp;rft.pages=33-55&amp;rft.date=1991&amp;rft_id=info%3Adoi%2F10.1007%2FBF02464423&amp;rft_id=info%3Apmid%2F2059741&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F94815%23id-name%3DJSTOR&amp;rft_id=info%3Abibcode%2F1927RSPSA.115..700K&amp;rft.aulast=Kermack&amp;rft.aufirst=WO&amp;rft.au=McKendrick%2C+AG&amp;rft_id=%2F%2Fdoi.org%2F10.1007%252FBF02464423&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFR._Parshani,_S._Carmi,_S._Havlin2010" class="citation journal cs1">R. Parshani, S. Carmi, S. Havlin (2010). "Epidemic Threshold for the Susceptible-Infectious-Susceptible Model on Random Networks". <i>Phys. Rev. Lett</i>. <b>104</b> (25): 258701. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/0909.3811">0909.3811</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2010PhRvL.104y8701P">2010PhRvL.104y8701P</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1103%2FPhysRevLett.104.258701">10.1103/PhysRevLett.104.258701</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/20867419">20867419</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Phys.+Rev.+Lett.&amp;rft.atitle=Epidemic+Threshold+for+the+Susceptible-Infectious-Susceptible+Model+on+Random+Networks&amp;rft.volume=104&amp;rft.issue=25&amp;rft.pages=258701&amp;rft.date=2010&amp;rft_id=info%3Aarxiv%2F0909.3811&amp;rft_id=info%3Apmid%2F20867419&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.104.258701&amp;rft_id=info%3Abibcode%2F2010PhRvL.104y8701P&amp;rft.au=R.+Parshani%2C+S.+Carmi%2C+S.+Havlin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span><span class="cs1-maint citation-comment">CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFLD_Valdez,_LA_Braunstein,_S_Havlin2020" class="citation journal cs1">LD Valdez, LA Braunstein, S Havlin (2020). "Epidemic spreading on modular networks: The fear to declare a pandemic". <i>Physical Review E</i>. <b>101</b> (3): 032309. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1909.09695">1909.09695</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2020PhRvE.101c2309V">2020PhRvE.101c2309V</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1103%2FPhysRevE.101.032309">10.1103/PhysRevE.101.032309</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/32289896">32289896</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:202719412">202719412</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Physical+Review+E&amp;rft.atitle=Epidemic+spreading+on+modular+networks%3A+The+fear+to+declare+a+pandemic&amp;rft.volume=101&amp;rft.issue=3&amp;rft.pages=032309&amp;rft.date=2020&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A202719412%23id-name%3DS2CID&amp;rft_id=info%3Abibcode%2F2020PhRvE.101c2309V&amp;rft_id=info%3Aarxiv%2F1909.09695&amp;rft_id=info%3Apmid%2F32289896&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevE.101.032309&amp;rft.au=LD+Valdez%2C+LA+Braunstein%2C+S+Havlin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span><span class="cs1-maint citation-comment">CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFCostris-VasSchwartzSmith?_RJ2020" class="citation journal cs1">Costris-Vas C, Schwartz EJ, Smith? RJ (November 2020). <a rel="nofollow" class="external text" href="https://www.aimspress.com/article/10.3934/mbe.2020383">"Predicting COVID-19 using past pandemics as a guide: how reliable were mathematical models then, and how reliable will they be now?"</a>. <i>Mathematical Biosciences and Engineering</i>. <b>17</b> (6): 7502–7518. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.3934%2Fmbe">10.3934/mbe</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/33378907">33378907</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Mathematical+Biosciences+and+Engineering&amp;rft.atitle=Predicting+COVID-19+using+past+pandemics+as+a+guide%3A+how+reliable+were+mathematical+models+then%2C+and+how+reliable+will+they+be+now%3F&amp;rft.volume=17&amp;rft.issue=6&amp;rft.pages=7502-7518&amp;rft.date=2020-11&amp;rft_id=info%3Adoi%2F10.3934%2Fmbe&amp;rft_id=info%3Apmid%2F33378907&amp;rft.aulast=Costris-Vas&amp;rft.aufirst=C&amp;rft.au=Schwartz%2C+EJ&amp;rft.au=Smith%3F+RJ&amp;rft_id=https%3A%2F%2Fwww.aimspress.com%2Farticle%2F10.3934%2Fmbe.2020383&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=18" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011217839">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-100{font-size:100%}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}</style><div class="refbegin" style="">
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFKeelingRohani" class="citation book cs1">Keeling M, Rohani P. <i>Modeling Infectious Diseases: In Humans and Animals</i>. Princeton: Princeton University Press.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Modeling+Infectious+Diseases%3A+In+Humans+and+Animals&amp;rft.place=Princeton&amp;rft.pub=Princeton+University+Press&amp;rft.aulast=Keeling&amp;rft.aufirst=Matt&amp;rft.au=Rohani%2C+Pej&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFVynnyckyWhite" class="citation book cs1">Vynnycky E, White RG. <a rel="nofollow" class="external text" href="http://anintroductiontoinfectiousdiseasemodelling.com/"><i>An Introduction to Infectious Disease Modelling</i></a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-02-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=An+Introduction+to+Infectious+Disease+Modelling&amp;rft.aulast=Vynnycky&amp;rft.aufirst=Emilia&amp;rft.au=White%2C+Richard+G.&amp;rft_id=http%3A%2F%2Fanintroductiontoinfectiousdiseasemodelling.com%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span> An introductory book on infectious disease modelling and its applications.</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFGrasslyFraser2008" class="citation journal cs1">Grassly NC, Fraser C (June 2008). <a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC7097581">"Mathematical models of infectious disease transmission"</a>. <i>Nature Reviews. Microbiology</i>. <b>6</b> (6): 477–87. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1038%2Fnrmicro1845">10.1038/nrmicro1845</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC7097581">7097581</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/18533288">18533288</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Nature+Reviews.+Microbiology&amp;rft.atitle=Mathematical+models+of+infectious+disease+transmission&amp;rft.volume=6&amp;rft.issue=6&amp;rft.pages=477-87&amp;rft.date=2008-06&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC7097581%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F18533288&amp;rft_id=info%3Adoi%2F10.1038%2Fnrmicro1845&amp;rft.aulast=Grassly&amp;rft.aufirst=NC&amp;rft.au=Fraser%2C+C&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC7097581&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFBoilyMâsse1997" class="citation journal cs1">Boily MC, Mâsse B (Jul–Aug 1997). <a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC6990198">"Mathematical models of disease transmission: a precious tool for the study of sexually transmitted diseases"</a>. <i>Canadian Journal of Public Health</i>. <b>88</b> (4): 255–65. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF03404793">10.1007/BF03404793</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC6990198">6990198</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/9336095">9336095</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Canadian+Journal+of+Public+Health&amp;rft.atitle=Mathematical+models+of+disease+transmission%3A+a+precious+tool+for+the+study+of+sexually+transmitted+diseases&amp;rft.volume=88&amp;rft.issue=4&amp;rft.pages=255-65&amp;rft.date=1997-07%2F1997-08&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC6990198%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F9336095&amp;rft_id=info%3Adoi%2F10.1007%2FBF03404793&amp;rft.aulast=Boily&amp;rft.aufirst=MC&amp;rft.au=M%C3%A2sse%2C+B&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC6990198&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFCapasso" class="citation book cs1">Capasso V. <i>Mathematical Structures of Epidemic Systems. Second Printing</i>. Heidelberg, 2008: Springer.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mathematical+Structures+of+Epidemic+Systems.+Second+Printing&amp;rft.place=Heidelberg%2C+2008&amp;rft.pub=Springer&amp;rft.aulast=Capasso&amp;rft.aufirst=Vincenzo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMathematical+modelling+of+infectious+disease" class="Z3988"></span><span class="cs1-maint citation-comment">CS1 maint: location (<a href="/wiki/Category:CS1_maint:_location" title="Category:CS1 maint: location">link</a>)</span></li></ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit&amp;section=19" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl><dt>Software</dt></dl>
+<ul><li><a rel="nofollow" class="external text" href="http://model-builder.sourceforge.net/">Model-Builder</a>: Interactive (GUI-based) software to build, simulate, and analyze ODE models.</li>
+<li><a rel="nofollow" class="external text" href="http://www.gleamviz.org/">GLEaMviz Simulator</a>: Enables simulation of emerging infectious diseases spreading across the world.</li>
+<li><a rel="nofollow" class="external text" href="http://www.eclipse.org/stem/">STEM</a>: Open source framework for Epidemiological Modeling available through the Eclipse Foundation.</li>
+<li><a href="/wiki/R_(programming_language)" title="R (programming language)">R</a> package <a rel="nofollow" class="external text" href="https://CRAN.R-project.org/package=surveillance">surveillance</a>: Temporal and Spatio-Temporal Modeling and Monitoring of Epidemic Phenomena</li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Concepts_in_infectious_disease" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><style data-mw-deduplicate="TemplateStyles:r992953826">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}.mw-parser-output .infobox .navbar{font-size:100%}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Concepts_in_infectious_disease" title="Template:Concepts in infectious disease"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Concepts_in_infectious_disease" title="Template talk:Concepts in infectious disease"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Concepts_in_infectious_disease&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Concepts_in_infectious_disease" style="font-size:114%;margin:0 4em">Concepts in <a href="/wiki/Infectious_disease" class="mw-redirect" title="Infectious disease">infectious disease</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Transmission_(medicine)" title="Transmission (medicine)">Transmission</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;text-align:left;">Basic concepts</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Asymptomatic_carrier" title="Asymptomatic carrier">Asymptomatic carrier</a></li>
+<li><a href="/wiki/Fomite" title="Fomite">Fomite</a></li>
+<li><a href="/wiki/Host_(biology)" title="Host (biology)">Host</a></li>
+<li><a href="/wiki/Incubation_period" title="Incubation period">Incubation period</a></li>
+<li><a href="/wiki/Index_case" title="Index case">Index case</a></li>
+<li><a href="/wiki/Infectious_period" title="Infectious period">Infectious period</a></li>
+<li><a href="/wiki/Latent_period_(epidemiology)" title="Latent period (epidemiology)">Latent period</a></li>
+<li><a href="/wiki/Natural_reservoir" title="Natural reservoir">Natural reservoir</a></li>
+<li><a href="/wiki/Opportunistic_infection" title="Opportunistic infection">Opportunistic infection</a></li>
+<li><a href="/wiki/Subclinical_infection" title="Subclinical infection">Subclinical infection</a></li>
+<li><a href="/wiki/Super-spreader" class="mw-redirect" title="Super-spreader">Super-spreader</a></li>
+<li><a href="/wiki/Susceptible_individual" title="Susceptible individual">Susceptible individual</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;text-align:left;">Modes</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Human-to-human_transmission" title="Human-to-human transmission">Human-to-human transmission</a>
+<ul><li><a href="/wiki/Transmission_(medicine)#Horizontal_transmission" title="Transmission (medicine)">Horizontal</a></li>
+<li><a href="/wiki/Vertically_transmitted_infection" title="Vertically transmitted infection">Vertical</a></li></ul></li>
+<li><a href="/wiki/Cross-species_transmission" title="Cross-species transmission">Cross-species transmission</a>
+<ul><li><a href="/wiki/Spillover_infection" title="Spillover infection">Spillover infection</a></li>
+<li><a href="/wiki/Vector_(epidemiology)" title="Vector (epidemiology)">Vector</a></li>
+<li><a href="/wiki/Zoonosis" title="Zoonosis">Zoonosis</a></li>
+<li><a href="/wiki/Reverse_zoonosis" title="Reverse zoonosis">Reverse zoonosis</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;text-align:left;">Routes</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Airborne_disease" class="mw-redirect" title="Airborne disease">Airborne disease</a></li>
+<li><a href="/wiki/Blood-borne_disease" title="Blood-borne disease">Blood-borne disease</a></li>
+<li><a href="/wiki/Foodborne_illness" title="Foodborne illness">Foodborne illness</a></li>
+<li><a href="/wiki/Waterborne_disease" class="mw-redirect" title="Waterborne disease">Waterborne disease</a></li>
+<li><a href="/wiki/Hospital-acquired_infection" title="Hospital-acquired infection">Hospital-acquired infection</a></li>
+<li><a href="/wiki/Fomite" title="Fomite">Fomite</a></li>
+<li><a href="/wiki/Fecal-oral_route" class="mw-redirect" title="Fecal-oral route">Fecal-oral route</a></li>
+<li><a href="/wiki/Sexually_transmitted_infection" title="Sexually transmitted infection">Sexual</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;text-align:left;"><a class="mw-selflink selflink">Modelling</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Attack_rate" title="Attack rate">Attack rate</a></li>
+<li><a href="/wiki/Basic_reproduction_number" title="Basic reproduction number">Basic reproduction number</a></li>
+<li><a href="/wiki/Compartmental_models_in_epidemiology" title="Compartmental models in epidemiology">Compartmental models in epidemiology</a></li>
+<li><a href="/wiki/Critical_community_size" title="Critical community size">Critical community size</a></li>
+<li><a href="/wiki/Herd_immunity" title="Herd immunity">Herd immunity</a></li>
+<li><a href="/wiki/Infection_rate" title="Infection rate">Infection rate</a></li>
+<li><a href="/wiki/Serial_interval" title="Serial interval">Serial interval</a></li>
+<li><a href="/wiki/Transmission_risks_and_rates" title="Transmission risks and rates">Transmission risks and rates</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;text-align:left;">Occurrence levels</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Prevalence" title="Prevalence">Prevalence</a></li>
+<li><a href="/wiki/Incidence_(epidemiology)" title="Incidence (epidemiology)">Incidence</a></li>
+<li><a href="/wiki/Disease_outbreak" title="Disease outbreak">Outbreak</a></li>
+<li><a href="/wiki/Disease_cluster" title="Disease cluster">Cluster</a></li>
+<li><a href="/w/index.php?title=Sporadic_disease&amp;action=edit&amp;redlink=1" class="new" title="Sporadic disease (page does not exist)">Sporadic</a></li>
+<li><a href="/wiki/Endemic_(epidemiology)" title="Endemic (epidemiology)">Endemic</a></li>
+<li><a href="/w/index.php?title=Hyperendemic&amp;action=edit&amp;redlink=1" class="new" title="Hyperendemic (page does not exist)">Hyperendemic</a></li>
+<li><a href="/wiki/Holoendemic" title="Holoendemic">Holoendemic</a></li>
+<li><a href="/wiki/Epidemic" title="Epidemic">Epidemic</a></li>
+<li><a href="/wiki/Pandemic" title="Pandemic">Pandemic</a></li>
+<li><a href="/wiki/Syndemic" title="Syndemic">Syndemic</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Medication</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Antimicrobial" title="Antimicrobial">Antimicrobial</a></li>
+<li><a href="/wiki/Antibiotic" title="Antibiotic">Antibiotic</a></li>
+<li><a href="/wiki/Antiviral_drug" title="Antiviral drug">Antiviral drug</a></li>
+<li><a href="/wiki/Antimicrobial_resistance" title="Antimicrobial resistance">Antimicrobial resistance</a></li>
+<li><a href="/wiki/Immunotherapy" title="Immunotherapy">Immunotherapy</a></li>
+<li><a href="/wiki/Phage_therapy" title="Phage therapy">Phage therapy</a></li>
+<li><a href="/wiki/Vaccination" title="Vaccination">Vaccination</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Emerging_infectious_disease" title="Emerging infectious disease">Emerging infections</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Disease_X" title="Disease X">Disease X</a></li>
+<li><a href="/wiki/Emergent_virus" title="Emergent virus">Emergent virus</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Discovery_of_disease-causing_pathogens" title="Discovery of disease-causing pathogens">Discovery of disease-causing pathogens</a></li>
+<li><a href="/wiki/Eradication_of_infectious_diseases" title="Eradication of infectious diseases">Eradication of infectious diseases</a></li>
+<li><a href="/wiki/Pandemic" title="Pandemic">Pandemic</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div role="navigation" class="navbox" aria-labelledby="Artificial_induction_of_immunity_/_Immunization:_Vaccines,_Vaccination,_Infection,_Inoculation_(J07)" style="padding:3px"><table class="nowraplinks hlist mw-collapsible mw-collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r992953826"/><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Vaccines" title="Template:Vaccines"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Vaccines" title="Template talk:Vaccines"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Vaccines&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Artificial_induction_of_immunity_/_Immunization:_Vaccines,_Vaccination,_Infection,_Inoculation_(J07)" style="font-size:114%;margin:0 4em"><a href="/wiki/Artificial_induction_of_immunity" title="Artificial induction of immunity">Artificial induction of immunity</a> / <a href="/wiki/Immunization" title="Immunization">Immunization</a>: <a href="/wiki/Vaccine" title="Vaccine">Vaccines</a>, <a href="/wiki/Vaccination" title="Vaccination">Vaccination</a>, <a href="/wiki/Infection" title="Infection">Infection</a>, <a href="/wiki/Inoculation" title="Inoculation">Inoculation</a> (<a href="/wiki/ATC_code_J07" title="ATC code J07">J07</a>)</div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Development</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Immunologic_adjuvant" title="Immunologic adjuvant">Adjuvants</a></li>
+<li><a href="/wiki/List_of_vaccine_ingredients" class="mw-redirect" title="List of vaccine ingredients">List of vaccine ingredients</a></li>
+<li><a class="mw-selflink selflink">Mathematical modelling</a></li>
+<li><a href="/wiki/Vaccine_storage" title="Vaccine storage">Storage</a></li>
+<li><a href="/wiki/Timeline_of_vaccines" class="mw-redirect" title="Timeline of vaccines">Timeline</a></li>
+<li><a href="/wiki/Vaccine_trial" title="Vaccine trial">Trials</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Classes</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Conjugate_vaccine" title="Conjugate vaccine">Conjugate vaccine</a></li>
+<li><a href="/wiki/Inactivated_vaccine" title="Inactivated vaccine">Inactivated vaccine</a></li>
+<li><a href="/wiki/Live_vaccine" class="mw-redirect" title="Live vaccine">Live vaccine</a>
+<ul><li><a href="/wiki/Attenuated_vaccine" title="Attenuated vaccine">Attenuated vaccine</a></li>
+<li><a href="/wiki/Heterologous_vaccine" title="Heterologous vaccine">Heterologous vaccine</a></li></ul></li>
+<li><a href="/wiki/Subunit_vaccine" title="Subunit vaccine">Subunit/component</a> / <a href="/wiki/Peptide_vaccine" title="Peptide vaccine">Peptide</a> / <a href="/wiki/Virus-like_particle" title="Virus-like particle">Virus-like particle</a> / <a href="/wiki/Synthetic_vaccine" title="Synthetic vaccine">Synthetic</a></li>
+<li><a href="/wiki/DNA_vaccine" title="DNA vaccine">DNA</a> / <a href="/wiki/RNA_vaccine" title="RNA vaccine">RNA</a></li>
+<li><a href="/wiki/Toxoid" title="Toxoid">Toxoid</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Administration</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li>Global:
+<ul><li><a href="/wiki/GAVI_Alliance" class="mw-redirect" title="GAVI Alliance">GAVI Alliance</a></li>
+<li><a href="/wiki/National_Immunization_Technical_Advisory_Group" title="National Immunization Technical Advisory Group">NITAG</a></li>
+<li><a href="/wiki/Vaccination_policy" title="Vaccination policy">Policy</a></li>
+<li><a href="/wiki/Vaccination_schedule" title="Vaccination schedule">Schedule</a></li>
+<li><a href="/wiki/Vaccine_injury" class="mw-redirect" title="Vaccine injury">Vaccine injury</a></li></ul></li>
+<li>US:
+<ul><li><a href="/wiki/Advisory_Committee_on_Immunization_Practices" title="Advisory Committee on Immunization Practices">ACIP</a></li>
+<li><a href="/wiki/Vaccine_court" class="mw-redirect" title="Vaccine court">Vaccine court</a></li>
+<li><a href="/wiki/Vaccines_for_Children_Program" title="Vaccines for Children Program">Vaccines for Children Program</a></li>
+<li><a href="/wiki/Vaccine_Adverse_Event_Reporting_System" title="Vaccine Adverse Event Reporting System">VAERS</a></li>
+<li><a href="/wiki/Vaccine_Safety_Datalink" title="Vaccine Safety Datalink">VSD</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Vaccines</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Bacterial</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Anthrax_vaccines" title="Anthrax vaccines">Anthrax</a></li>
+<li><a href="/wiki/Brucellosis_vaccine" title="Brucellosis vaccine">Brucellosis</a></li>
+<li><a href="/wiki/Cholera_vaccine" title="Cholera vaccine">Cholera</a><sup>#</sup></li>
+<li><a href="/wiki/Diphtheria_vaccine" title="Diphtheria vaccine">Diphtheria</a><sup>#</sup></li>
+<li><a href="/wiki/Hib_vaccine" title="Hib vaccine">Hib</a><sup>#</sup></li>
+<li><a href="/wiki/Leptospirosis_vaccine" class="mw-redirect" title="Leptospirosis vaccine">Leptospirosis</a></li>
+<li><a href="/wiki/Lyme_disease_vaccine" class="mw-redirect" title="Lyme disease vaccine">Lyme disease</a><sup>‡</sup></li>
+<li><a href="/wiki/Meningococcal_vaccine" title="Meningococcal vaccine">Meningococcus</a><sup>#</sup>
+<ul><li><a href="/wiki/MeNZB" title="MeNZB">MeNZB</a></li>
+<li><a href="/wiki/NmVac4-A/C/Y/W-135" title="NmVac4-A/C/Y/W-135">NmVac4-A/C/Y/W-135</a></li></ul></li>
+<li><a href="/wiki/Pertussis_vaccine" title="Pertussis vaccine">Pertussis</a><sup>#</sup></li>
+<li><a href="/wiki/Plague_vaccine" title="Plague vaccine">Plague</a></li>
+<li><a href="/wiki/Pneumococcal_vaccine" title="Pneumococcal vaccine">Pneumococcal</a><sup>#</sup>
+<ul><li><a href="/wiki/Pneumococcal_conjugate_vaccine" title="Pneumococcal conjugate vaccine">PCV</a></li>
+<li><a href="/wiki/Pneumococcal_polysaccharide_vaccine" title="Pneumococcal polysaccharide vaccine">PPSV</a></li></ul></li>
+<li><a href="/wiki/Q_fever_vaccine" class="mw-redirect" title="Q fever vaccine">Q fever</a></li>
+<li><a href="/wiki/Tetanus_vaccine" title="Tetanus vaccine">Tetanus</a><sup>#</sup></li>
+<li><a href="/wiki/Tuberculosis_vaccines" title="Tuberculosis vaccines">Tuberculosis</a>
+<ul><li><a href="/wiki/BCG_vaccine" title="BCG vaccine">BCG</a><sup>#</sup></li></ul></li>
+<li><a href="/wiki/Typhoid_vaccine" title="Typhoid vaccine">Typhoid</a><sup>#</sup>
+<ul><li><a href="/wiki/Ty21a" title="Ty21a">Ty21a</a></li>
+<li><a href="/wiki/Vi_capsular_polysaccharide_vaccine" title="Vi capsular polysaccharide vaccine">ViCPS</a></li></ul></li>
+<li><a href="/wiki/Typhus_vaccine" title="Typhus vaccine">Typhus</a></li>
+<li>combination:
+<ul><li><a href="/wiki/DPT_vaccine" title="DPT vaccine">DPT/DTwP/DTaP</a></li>
+<li><a href="/wiki/Tetanus_vaccine" title="Tetanus vaccine">Td/Tdap</a></li></ul></li>
+<li>research:
+<ul><li><a href="/wiki/Clostridioides_difficile_infection#Research" title="Clostridioides difficile infection">Clostridioides difficile</a></li>
+<li><a href="/wiki/Group_B_streptococcal_infection#Vaccine" title="Group B streptococcal infection">Group B streptococcal disease</a></li>
+<li><a href="/wiki/Shigellosis#Vaccine" title="Shigellosis">Shigellosis</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Viral</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Adenovirus_vaccine" title="Adenovirus vaccine">Adenovirus</a></li>
+<li><a href="/wiki/Ebola_vaccine" title="Ebola vaccine">Ebola</a></li>
+<li><a href="/wiki/Influenza_vaccine" title="Influenza vaccine">Flu</a><sup>#</sup>
+<ul><li><a href="/wiki/2009_flu_pandemic_vaccine" class="mw-redirect" title="2009 flu pandemic vaccine">H1N1</a> (<a href="/wiki/Pandemrix" title="Pandemrix">Pandemrix</a>)</li>
+<li><a href="/wiki/H5N1_vaccine" title="H5N1 vaccine">H5N1</a></li>
+<li><a href="/wiki/Live_attenuated_influenza_vaccine" title="Live attenuated influenza vaccine">LAIV</a></li></ul></li>
+<li><a href="/wiki/Hantavirus_vaccine" title="Hantavirus vaccine">Hantavirus</a></li>
+<li><a href="/wiki/Hepatitis_A_vaccine" title="Hepatitis A vaccine">Hepatitis A</a><sup>#</sup></li>
+<li><a href="/wiki/Hepatitis_B_vaccine" title="Hepatitis B vaccine">Hepatitis B</a><sup>#</sup></li>
+<li><a href="/wiki/Hepatitis_E_vaccine" class="mw-redirect" title="Hepatitis E vaccine">Hepatitis E</a></li>
+<li><a href="/wiki/HPV_vaccines" class="mw-redirect" title="HPV vaccines">HPV</a>
+<ul><li><a href="/wiki/Cervarix" title="Cervarix">Cervarix</a></li>
+<li><a href="/wiki/Gardasil" title="Gardasil">Gardasil</a></li></ul></li>
+<li><a href="/wiki/Japanese_encephalitis_vaccine" title="Japanese encephalitis vaccine">Japanese encephalitis</a><sup>#</sup></li>
+<li><a href="/wiki/Measles_vaccine" title="Measles vaccine">Measles</a><sup>#</sup></li>
+<li><a href="/wiki/Mumps_vaccine" title="Mumps vaccine">Mumps</a><sup>#</sup>
+<ul><li><a href="/wiki/Mumpsvax" class="mw-redirect" title="Mumpsvax">Mumpsvax</a></li></ul></li>
+<li><a href="/wiki/Polio_vaccine" title="Polio vaccine">Polio</a><sup>#</sup>
+<ul><li><a href="/wiki/Sabin_polio_vaccine" class="mw-redirect" title="Sabin polio vaccine">Sabin</a></li>
+<li><a href="/wiki/Salk_polio_vaccine" class="mw-redirect" title="Salk polio vaccine">Salk</a></li></ul></li>
+<li><a href="/wiki/Rabies_vaccine" title="Rabies vaccine">Rabies</a><sup>#</sup></li>
+<li><a href="/wiki/Rotavirus_vaccine" title="Rotavirus vaccine">Rotavirus</a><sup>#</sup></li>
+<li><a href="/wiki/Rubella_vaccine" title="Rubella vaccine">Rubella</a><sup>#</sup></li>
+<li><a href="/wiki/COVID-19_vaccine" title="COVID-19 vaccine">SARS-CoV-2</a>
+<ul><li><a href="/wiki/BBIBP-CorV" title="BBIBP-CorV">Sinopharm</a><sup>†</sup></li>
+<li><a href="/wiki/Ad5-nCoV" class="mw-redirect" title="Ad5-nCoV">CanSino</a><sup>†</sup></li>
+<li><a href="/wiki/CoronaVac" title="CoronaVac">CoronaVac</a><sup>†</sup></li>
+<li><a href="/wiki/BBV152" title="BBV152">Bharat Biotech</a><sup>†</sup></li>
+<li><a href="/wiki/EpiVacCorona" title="EpiVacCorona">EpiVacCorona</a><sup>†</sup></li>
+<li><a href="/wiki/Johnson_%26_Johnson_COVID-19_vaccine" title="Johnson &amp; Johnson COVID-19 vaccine">Johnson &amp; Johnson</a><sup>†</sup></li>
+<li><a href="/wiki/Moderna_COVID-19_vaccine" title="Moderna COVID-19 vaccine">Moderna</a><sup>†</sup></li>
+<li><a href="/wiki/Oxford%E2%80%93AstraZeneca_COVID-19_vaccine" title="Oxford–AstraZeneca COVID-19 vaccine">Oxford–AstraZeneca</a><sup>†</sup></li>
+<li><a href="/wiki/Pfizer%E2%80%93BioNTech_COVID-19_vaccine" title="Pfizer–BioNTech COVID-19 vaccine">Pfizer–BioNTech</a><sup>†</sup></li>
+<li><a href="/wiki/Sputnik_V_COVID-19_vaccine" title="Sputnik V COVID-19 vaccine">Sputnik V</a><sup>†</sup></li></ul></li>
+<li><a href="/wiki/Smallpox_vaccine" title="Smallpox vaccine">Smallpox</a>
+<ul><li><a href="/wiki/Dryvax" class="mw-redirect" title="Dryvax">Dryvax</a></li></ul></li>
+<li><a href="/wiki/Tick-borne_encephalitis_vaccine" title="Tick-borne encephalitis vaccine">Tick-borne encephalitis</a></li>
+<li>Varicella zoster
+<ul><li><a href="/wiki/Varicella_vaccine" title="Varicella vaccine">Chicken pox</a><sup>#</sup></li>
+<li><a href="/wiki/Zoster_vaccine" title="Zoster vaccine">Shingles</a></li></ul></li>
+<li><a href="/wiki/Yellow_fever_vaccine" title="Yellow fever vaccine">Yellow fever</a><sup>#</sup></li>
+<li>combination:
+<ul><li><a href="/wiki/Hepatitis_A_and_B_vaccine" title="Hepatitis A and B vaccine">Hepatitis A and B</a></li>
+<li><a href="/wiki/MMR_vaccine" title="MMR vaccine">MMR</a></li>
+<li><a href="/wiki/MMRV_vaccine" title="MMRV vaccine">MMRV</a></li></ul></li>
+<li>research:
+<ul><li><a href="/wiki/Chikungunya#Vaccine" title="Chikungunya">Chikungunya</a></li>
+<li><a href="/wiki/Cytomegalovirus_vaccine" title="Cytomegalovirus vaccine">Cytomegalovirus</a></li>
+<li><a href="/wiki/Dengue_vaccine" title="Dengue vaccine">Dengue</a></li>
+<li><a href="/wiki/Epstein%E2%80%93Barr_virus_vaccine" title="Epstein–Barr virus vaccine">Epstein–Barr virus</a></li>
+<li><a href="/wiki/Hepatitis_C_vaccine" title="Hepatitis C vaccine">Hepatitis C</a></li>
+<li><a href="/wiki/Herpes_simplex_research" title="Herpes simplex research">Herpes simplex</a></li>
+<li><a href="/wiki/HIV_vaccine" class="mw-redirect" title="HIV vaccine">HIV</a></li>
+<li><a href="/wiki/Respiratory_syncytial_virus_vaccine" title="Respiratory syncytial virus vaccine">Respiratory syncytial virus</a></li>
+<li><a href="/wiki/Zika_virus_vaccine" title="Zika virus vaccine">Zika</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Protozoan</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Malaria_vaccine" title="Malaria vaccine">Malaria</a>
+<ul><li><a href="/wiki/RTS,S" title="RTS,S">RTS,S</a></li></ul></li>
+<li>research:
+<ul><li><a href="/wiki/Trypanosomiasis_vaccine" title="Trypanosomiasis vaccine">Trypanosomiasis</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Helminthiasis" title="Helminthiasis">Helminthiasis</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li>research:
+<ul><li><a href="/wiki/Hookworm_vaccine" title="Hookworm vaccine">Hookworm</a></li>
+<li><a href="/wiki/Schistosomiasis_vaccine" title="Schistosomiasis vaccine">Schistosomiasis</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Androvax" title="Androvax">Androvax (androstenedione albumin)</a></li>
+<li><a href="/wiki/Cancer_vaccine" title="Cancer vaccine">Cancer vaccines</a>
+<ul><li><a href="/wiki/ALVAC-CEA_vaccine" title="ALVAC-CEA vaccine">ALVAC-CEA</a></li>
+<li><a href="/wiki/BCG_vaccine" title="BCG vaccine">BCG</a><sup>#</sup></li>
+<li><a href="/wiki/Hepatitis_B_vaccine" title="Hepatitis B vaccine">Hepatitis B</a><sup>#</sup></li>
+<li><a href="/wiki/HPV_vaccines" class="mw-redirect" title="HPV vaccines">HPV</a>
+<ul><li><a href="/wiki/Cervarix" title="Cervarix">Cervarix</a></li>
+<li><a href="/wiki/Gardasil" title="Gardasil">Gardasil</a></li></ul></li>
+<li><a href="/wiki/Prostvac" title="Prostvac">Prostvac</a></li></ul></li>
+<li><a href="/wiki/NicVAX" title="NicVAX">NicVAX</a></li>
+<li><a href="/wiki/Ovandrotone_albumin" title="Ovandrotone albumin">Ovandrotone albumin (Fecundin)</a></li>
+<li><a href="/wiki/TA-CD" title="TA-CD">TA-CD</a></li>
+<li><a href="/wiki/TA-NIC" title="TA-NIC">TA-NIC</a></li>
+<li>combination:
+<ul><li><a href="/wiki/DTaP-IPV/Hib" class="mw-redirect" title="DTaP-IPV/Hib">DTaP-IPV/Hib</a></li>
+<li><a href="/wiki/DTaP-IPV-HepB" class="mw-redirect" title="DTaP-IPV-HepB">DTaP-IPV-HepB</a></li>
+<li><a href="/wiki/Hexavalent_vaccine" title="Hexavalent vaccine">Hexavalent vaccine</a></li>
+<li><a href="/wiki/Pentavalent_vaccine" title="Pentavalent vaccine">Pentavalent vaccine</a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Inventors/researchers</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Edward_Jenner" title="Edward Jenner">Edward Jenner</a></li>
+<li><a href="/wiki/Louis_Pasteur" title="Louis Pasteur">Louis Pasteur</a></li>
+<li><a href="/wiki/Hilary_Koprowski" title="Hilary Koprowski">Hilary Koprowski</a></li>
+<li><a href="/wiki/Jonas_Salk" title="Jonas Salk">Jonas Salk</a></li>
+<li><a href="/wiki/John_Franklin_Enders" title="John Franklin Enders">John Franklin Enders</a></li>
+<li><a href="/wiki/Maurice_Hilleman" title="Maurice Hilleman">Maurice Hilleman</a></li>
+<li><a href="/wiki/Stanley_Plotkin" title="Stanley Plotkin">Stanley Plotkin</a></li>
+<li><a href="/wiki/H._Fred_Clark" title="H. Fred Clark">H. Fred Clark</a></li>
+<li><a href="/wiki/Paul_Offit" title="Paul Offit">Paul Offit</a></li>
+<li><a href="/wiki/Anthony_Fauci" title="Anthony Fauci">Anthony Fauci</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Controversy</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Vaccine_controversies" class="mw-redirect" title="Vaccine controversies">General</a></li>
+<li><a href="/wiki/MMR_vaccine_and_autism" title="MMR vaccine and autism">MMR</a> (<a href="/wiki/Lancet_MMR_autism_fraud" title="Lancet MMR autism fraud"><i>Lancet</i> MMR autism fraud</a>)</li>
+<li><a href="/wiki/National_Childhood_Vaccine_Injury_Act" title="National Childhood Vaccine Injury Act">NCVIA</a></li>
+<li>Infection party
+<ul><li><a href="/wiki/Pox_party" title="Pox party">Pox</a></li>
+<li><a href="/wiki/Flu_party" class="mw-redirect" title="Flu party">Flu</a></li>
+<li><a href="/wiki/Coronavirus_party" title="Coronavirus party">CoV</a></li></ul></li>
+<li><a href="/wiki/Thiomersal_controversy" class="mw-redirect" title="Thiomersal controversy">Thiomersal</a></li>
+<li><a href="/wiki/Vaccines_and_SIDS" title="Vaccines and SIDS">Vaccines and SIDS</a></li>
+<li><i><a href="/wiki/Cedillo_v._Secretary_of_Health_and_Human_Services" title="Cedillo v. Secretary of Health and Human Services">Cedillo v. Secretary of Health and Human Services</a></i></li>
+<li><a href="/wiki/Alternative_vaccination_schedule" title="Alternative vaccination schedule">Alternative vaccination schedule</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Epidemiology" title="Epidemiology">Epidemiology</a></li>
+<li><a href="/wiki/Eradication_of_infectious_diseases" title="Eradication of infectious diseases">Eradication of infectious diseases</a></li>
+<li><a href="/wiki/Every_Child_by_Two" class="mw-redirect" title="Every Child by Two">Every Child by Two</a></li>
+<li><a href="/wiki/List_of_vaccine_topics" title="List of vaccine topics">List of vaccine topics</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2" style="background: transparent; padding: 0px;"><div><div class="hlist">
+<ul><li><sup>#</sup><a href="/wiki/WHO_Model_List_of_Essential_Medicines" title="WHO Model List of Essential Medicines">WHO-EM</a></li>
+<li><sup>‡</sup><a href="/wiki/List_of_withdrawn_drugs" title="List of withdrawn drugs">Withdrawn</a> from market</li>
+<li><a href="/wiki/Clinical_trial" title="Clinical trial">Clinical trials</a>:
+<ul><li><sup>†</sup><a href="/wiki/Phases_of_clinical_research#Phase_III" title="Phases of clinical research">Phase III</a></li>
+<li><sup>§</sup>Never to phase III</li></ul></li></ul>
+</div></div></td></tr></tbody></table></div>
+<div role="navigation" class="navbox" aria-labelledby="Scientific_modelling" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r992953826"/><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Computer_modeling" title="Template:Computer modeling"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Computer_modeling" title="Template talk:Computer modeling"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Computer_modeling&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Scientific_modelling" style="font-size:114%;margin:0 4em"><a href="/wiki/Scientific_modelling" title="Scientific modelling">Scientific modelling</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Modelling_biological_systems" title="Modelling biological systems">Biological</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Cellular_model" title="Cellular model">Cellular model</a></li>
+<li><a href="/wiki/Chemical_process_modeling" title="Chemical process modeling">Chemical process modeling</a></li>
+<li><a href="/wiki/Ecosystem_model" title="Ecosystem model">Ecosystem model</a></li>
+<li><a class="mw-selflink selflink">Infectious disease model</a></li>
+<li><a href="/wiki/Metabolic_network_modelling" title="Metabolic network modelling">Metabolic network modelling</a></li>
+<li><a href="/wiki/Modelling_biological_systems" title="Modelling biological systems">Modelling biological systems</a></li>
+<li><a href="/wiki/Protein_structure_prediction" title="Protein structure prediction">Protein structure prediction</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Environmental</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Atmospheric_model" title="Atmospheric model">Atmospheric model</a></li>
+<li><a href="/wiki/Chemical_transport_model" title="Chemical transport model">Chemical transport model</a></li>
+<li><a href="/wiki/Climate_model" title="Climate model">Climate model</a></li>
+<li><a href="/wiki/Geologic_modelling" title="Geologic modelling">Geologic modelling</a></li>
+<li><a href="/wiki/Groundwater_model" title="Groundwater model">Groundwater model</a></li>
+<li><a href="/wiki/Hydrological_model" title="Hydrological model">Hydrological model</a></li>
+<li><a href="/wiki/Hydrological_transport_model" title="Hydrological transport model">Hydrological transport model</a></li>
+<li><a href="/wiki/Modular_Ocean_Model" title="Modular Ocean Model">Modular Ocean Model</a></li>
+<li><a href="/wiki/Wildfire_modeling" title="Wildfire modeling">Wildfire modeling</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Sustainability</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Energy_modeling" title="Energy modeling">Energy modeling</a></li>
+<li><a href="/wiki/Integrated_assessment_modelling" title="Integrated assessment modelling">Integrated assessment modelling</a></li>
+<li><a href="/wiki/Population_model" title="Population model">Population model</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Social</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Biopsychosocial_model" title="Biopsychosocial model">Biopsychosocial model</a></li>
+<li><a href="/wiki/Business_process_modelling" class="mw-redirect" title="Business process modelling">Business process modelling</a></li>
+<li><a href="/wiki/Catastrophe_modeling" title="Catastrophe modeling">Catastrophe modeling</a></li>
+<li><a href="/wiki/Construction_and_management_simulation" title="Construction and management simulation">Construction and management simulation</a></li>
+<li><a href="/wiki/Crime_mapping" title="Crime mapping">Crime mapping</a></li>
+<li><a href="/wiki/Economic_model" title="Economic model">Economic model</a></li>
+<li><a href="/wiki/Input%E2%80%93output_model" title="Input–output model">Input–output model</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related topics</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Data_visualization" title="Data visualization">Data visualization</a></li>
+<li><a href="/wiki/List_of_computer_simulation_software" title="List of computer simulation software">List of computer simulation software</a></li>
+<li><a href="/wiki/Mathematical_modeling" class="mw-redirect" title="Mathematical modeling">Mathematical modeling</a></li>
+<li><a href="/wiki/Systems_theory" title="Systems theory">Systems theory</a></li>
+<li><a href="/wiki/Systems_thinking" class="mw-redirect" title="Systems thinking">Systems thinking</a></li>
+<li><a href="/wiki/Visual_analytics" title="Visual analytics">Visual analytics</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1322
+Cached time: 20210410160955
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.768 seconds
+Real time usage: 0.952 seconds
+Preprocessor visited node count: 2266/1000000
+Post‐expand include size: 130487/2097152 bytes
+Template argument size: 3175/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 72794/5000000 bytes
+Lua time usage: 0.337/10.000 seconds
+Lua memory usage: 6148819/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  674.123      1 -total
+ 40.06%  270.081      1 Template:Reflist
+ 20.44%  137.806      7 Template:Cite_book
+ 15.04%  101.399     13 Template:Cite_journal
+ 14.75%   99.430      1 Template:Short_description
+ 13.75%   92.691      4 Template:Citation_needed
+ 13.19%   88.902      5 Template:Navbox
+ 11.24%   75.773      4 Template:Fix
+  8.66%   58.385      1 Template:Concepts_in_infectious_disease
+  7.83%   52.759      1 Template:Pagetype
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:951614-0!canonical!math=5 and timestamp 20210410160954 and revision id 1016930402. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;oldid=1016930402">https://en.wikipedia.org/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;oldid=1016930402</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Epidemiology" title="Category:Epidemiology">Epidemiology</a></li><li><a href="/wiki/Category:Mathematical_and_theoretical_biology" title="Category:Mathematical and theoretical biology">Mathematical and theoretical biology</a></li><li><a href="/wiki/Category:Vaccination" title="Category:Vaccination">Vaccination</a></li><li><a href="/wiki/Category:Medical_statistics" title="Category:Medical statistics">Medical statistics</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">CS1 maint: multiple names: authors list</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_December_2012" title="Category:Articles with unsourced statements from December 2012">Articles with unsourced statements from December 2012</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2017" title="Category:Articles with unsourced statements from July 2017">Articles with unsourced statements from July 2017</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_June_2020" title="Category:Articles with unsourced statements from June 2020">Articles with unsourced statements from June 2020</a></li><li><a href="/wiki/Category:CS1_maint:_location" title="Category:CS1 maint: location">CS1 maint: location</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" class="vector-menu-heading">
+		<span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Mathematical+modelling+of+infectious+disease" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Mathematical+modelling+of+infectious+disease" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading">
+		<span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected"><a href="/wiki/Mathematical_modelling_of_infectious_disease" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="/wiki/Talk:Mathematical_modelling_of_infectious_disease" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li></ul>
+		
+	</div>
+</nav>
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading">
+		<span>Variants</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading">
+		<span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected"><a href="/wiki/Mathematical_modelling_of_infectious_disease">Read</a></li><li id="ca-edit"><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history"><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading">
+		<span>More</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" >
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/w/index.php" id="searchform">
+		<div id="simpleSearch" data-search-loc="header-navigation">
+			<input type="search" name="search" placeholder="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" name="title" value="Special:Search"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading">
+		<span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Articles related to current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x">Random article</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">About Wikipedia</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact us</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">Donate</a></li></ul>
+		
+	</div>
+</nav>
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<h3 id="p-interaction-label" class="vector-menu-heading">
+		<span>Contribute</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-introduction"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">Learn to edit</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r">Recent changes</a></li><li id="n-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia">Upload file</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading">
+		<span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Mathematical_modelling_of_infectious_disease" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Mathematical_modelling_of_infectious_disease" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;oldid=1016930402" title="Permanent link to this revision of this page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Mathematical_modelling_of_infectious_disease&amp;id=1016930402&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1252988" title="Structured data on this page hosted by Wikidata [g]" accesskey="g">Wikidata item</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<h3 id="p-coll-print_export-label" class="vector-menu-heading">
+		<span>Print/export</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Mathematical_modelling_of_infectious_disease&amp;action=show-download-screen" title="Download this page as a PDF file">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-wikibase-otherprojects" class="mw-portlet mw-portlet-wikibase-otherprojects vector-menu vector-menu-portal portal" aria-labelledby="p-wikibase-otherprojects-label" role="navigation" 
+	 >
+	<h3 id="p-wikibase-otherprojects-label" class="vector-menu-heading">
+		<span>In other projects</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Mathematical_modeling_of_epidemics" hreflang="en">Wikimedia Commons</a></li></ul>
+		
+	</div>
+</nav>
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<h3 id="p-lang-label" class="vector-menu-heading">
+		<span>Languages</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Mathematische_Modellierung_der_Epidemiologie" title="Mathematische Modellierung der Epidemiologie – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Modelaje_matem%C3%A1tico_de_epidemias" title="Modelaje matemático de epidemias – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/%D5%8E%D5%A1%D6%80%D5%A1%D5%AF%D5%AB%D5%B9_%D5%B0%D5%AB%D5%BE%D5%A1%D5%B6%D5%A4%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6%D5%B6%D5%A5%D6%80%D5%AB_%D5%B4%D5%A1%D5%A9%D5%A5%D5%B4%D5%A1%D5%BF%D5%AB%D5%AF%D5%A1%D5%AF%D5%A1%D5%B6_%D5%B4%D5%B8%D5%A4%D5%A5%D5%AC" title="Վարակիչ հիվանդությունների մաթեմատիկական մոդել – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Modelli_matematici_in_epidemiologia" title="Modelli matematici in epidemiologia – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Epidemian_matemaattinen_mallintaminen" title="Epidemian matemaattinen mallintaminen – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%B5_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D1%96%D0%BD%D1%84%D0%B5%D0%BA%D1%86%D1%96%D0%B9%D0%BD%D0%B8%D1%85_%D0%B7%D0%B0%D1%85%D0%B2%D0%BE%D1%80%D1%8E%D0%B2%D0%B0%D0%BD%D1%8C" title="Математичне моделювання інфекційних захворювань – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1252988#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> This page was last edited on 9 April 2021, at 20:43<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Mathematical_modelling_of_infectious_disease&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.768","walltime":"0.952","ppvisitednodes":{"value":2266,"limit":1000000},"postexpandincludesize":{"value":130487,"limit":2097152},"templateargumentsize":{"value":3175,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":72794,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  674.123      1 -total"," 40.06%  270.081      1 Template:Reflist"," 20.44%  137.806      7 Template:Cite_book"," 15.04%  101.399     13 Template:Cite_journal"," 14.75%   99.430      1 Template:Short_description"," 13.75%   92.691      4 Template:Citation_needed"," 13.19%   88.902      5 Template:Navbox"," 11.24%   75.773      4 Template:Fix","  8.66%   58.385      1 Template:Concepts_in_infectious_disease","  7.83%   52.759      1 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.337","limit":"10.000"},"limitreport-memusage":{"value":6148819,"limit":52428800}},"cachereport":{"origin":"mw1322","timestamp":"20210410160955","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Mathematical modelling of infectious disease","url":"https:\/\/en.wikipedia.org\/wiki\/Mathematical_modelling_of_infectious_disease","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1252988","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1252988","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-09-02T09:17:53Z","dateModified":"2021-04-09T20:43:03Z","headline":"using a mathematical model to understand infectious disease transmission and predict the likely outcome of an epidemic"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":116,"wgHostname":"mw1389"});});</script>
+</body></html>
