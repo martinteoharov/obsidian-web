@@ -10,6 +10,10 @@ app.use(express.static('static'));
 app.use(express.static('html'));
 app.use(directory('html'));
 
+app.get('/graph.json', (req, res) => {
+	res.sendFile(__dirname + '/graph.json');
+});
+
 
 app.listen(port, () => {
 	console.log(`Server started on port: ${port}`);

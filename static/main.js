@@ -28,9 +28,10 @@ const generateNodes = (nodes) => {
 
 (() => {
 	$.ajax({
-		url: "json/graph.json",
+		url: "graph.json",
 		dataType: "json",
 		success: (res) => {
+			// TODO if not found print error to screen
 			console.log(res);
 			generateNodes(res);
 			update();
