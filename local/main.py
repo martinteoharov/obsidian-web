@@ -1,4 +1,4 @@
-from definitions import ROOT_DIR
+from definitions import ROOT_DIR, bcolors
 from tkinter import Tk
 from tkinter.filedialog import askdirectory
 import subprocess
@@ -21,19 +21,10 @@ htmlPath = f'{ROOT_DIR}/html/'
 shutil.rmtree(htmlPath)
 shutil.move(outputPath, htmlPath)
 
-print(f'Markdown Input Dir: {inputPath} \nHTML Output Dir: {htmlPath}')
+print(bcolors.WARNING + f'Markdown Input Dir: {inputPath} \nHTML Output Dir: {htmlPath}' + bcolors.ENDC)
 
 
 ## Dir is moved and ready to be linked...
 
 from link import link_dir
 link_dir(htmlPath, htmlPath, f'{ROOT_DIR}/graph.json')
-print('Directory linked!')
-
-
-
-
-
-
-
-

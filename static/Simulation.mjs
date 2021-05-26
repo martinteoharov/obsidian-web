@@ -111,7 +111,7 @@ class Graph {
 	calculateForces(){
 		for(const node of this.nodes) {
 			node.vel.mult(0);
-		}
+	}
 
 		// make nodes converge if connected
 		for(const node of this.nodes) {

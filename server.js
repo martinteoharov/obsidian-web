@@ -1,6 +1,6 @@
-const express = require('express');
-const env = require('dotenv').config();
-const app = express();
+const express   = require('express');
+const env       = require('dotenv').config();
+const app       = express();
 const directory = require('serve-index');
 
 console.log(env);
